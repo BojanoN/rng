@@ -1,0 +1,25 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 62 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 891 clock pin(s) of sequential element(s)
+0 instances converted, 891 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0004       clk_25m             port                   54         digital_fm_radio.PWM0.pwm_acc[11]
+@K:CKID0005       btn_up              port                   8          digital_fm_radio_ledio[0]        
+=========================================================================================================
+=========================================================================================================================== Gated/Generated Clocks ============================================================================================================================
+Clock Tree ID     Driving Element                                    Drive Element Type     Fanout     Sample Instance                           Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     EPLLD1                 816        digital_fm_radio.RESET_GEN.PLL_RESET      Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     EPLLD1                 42         digital_fm_radio.FIR0.d0[4]               No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+@K:CKID0003       digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     EPLLD1                 33         digital_fm_radio.phase_accumulator[1]     No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+===============================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

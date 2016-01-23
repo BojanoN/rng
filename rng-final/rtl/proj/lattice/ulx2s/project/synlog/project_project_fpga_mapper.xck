@@ -1,0 +1,5 @@
+CKID0001:@|S:digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0@|E:digital_fm_radio.RESET_GEN.PLL_RESET@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0@|E:digital_fm_radio.FIR0.d0[4]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0@|E:digital_fm_radio.phase_accumulator[1]@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
+CKID0004:@|S:clk_25m@|E:digital_fm_radio.PWM0.pwm_acc[11]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:btn_up@|E:digital_fm_radio_ledio[0]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 

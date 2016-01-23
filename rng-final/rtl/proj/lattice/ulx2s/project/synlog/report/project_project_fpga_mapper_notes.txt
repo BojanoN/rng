@@ -1,0 +1,83 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: FX404 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":220:12:220:13|Found addmux in view:work.FleaFPGA_FM_Radio(behavior) inst K_mod_control_6[31:0] from un1_K_mod_control[31:0] 
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":68:10:68:62|Pipelining module un28_sum[11:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register sum[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d4[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d3[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d2[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d15[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d14[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d1[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d13[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d12[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d11[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d10[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d9[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d8[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d7[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d6[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d5[7:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":68:10:68:62|Pipelining module un28_sum[11:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register sum[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d4[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d3[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d2[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d15[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d14[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d1[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d13[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d12[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d11[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d10[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d9[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d8[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d7[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d6[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d5[7:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":235:26:235:39|Pipelining module un3_long_timer[19:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":230:4:230:5|Register long_timer[19:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":60:10:60:62|Pipelining module un28_sum[15:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register sum[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d6[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d5[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d7[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d4[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d8[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d3[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d9[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d2[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d10[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d1[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d11[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d0[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d12[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register data_out[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d13[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d14[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d15[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_loop_filter.vhd":29:2:29:3|Register D1[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_loop_filter.vhd":29:2:29:3|Register dtemp[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Register dtemp[17:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register output[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register out_temp[15:8] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register part7[8:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register part6[8:0] pushed in.
+@N: FX211 |Packed ROM digital_fm_radio.U3.I2.dout_5_0[13:0] (9 input, 14 output) to Block SelectRAM 
+@N: FX211 |Packed ROM digital_fm_radio.U3.I2.dout_2_0[6:0] (9 input, 7 output) to Block SelectRAM 
+@N: BN362 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Removing sequential instance digital_fm_radio.K_mod_control[0] in hierarchy view:work.ulx2s_fm_radio(arch) because there are no references to its outputs 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR0.d0[4]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR0.d0[0]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR1.d0[4]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR1.d0[0]" 
+@N: BN362 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Removing sequential instance digital_fm_radio.K_mod_control[1] in hierarchy view:work.ulx2s_fm_radio(arch) because there are no references to its outputs 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

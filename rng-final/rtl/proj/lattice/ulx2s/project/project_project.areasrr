@@ -1,0 +1,229 @@
+----------------------------------------------------------------------
+Report for cell ulx2s_fm_radio.arch
+
+Register bits: 951 of 8352 (11%)
+PIC Latch:       0
+I/O cells:       48
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B      414       100.0
+                             EPLLD1        2       100.0
+                            FD1P3BX       12       100.0
+                            FD1P3DX      308       100.0
+                            FD1S3AX        8       100.0
+                            FD1S3AY        1       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX      608       100.0
+                                GSR        1       100.0
+                                 IB        6       100.0
+                           IFS1P3DX        1       100.0
+                                INV        5       100.0
+                                 OB       42       100.0
+                           OFS1P3DX        8       100.0
+                           ORCALUT4      807       100.0
+                           PDPW16KB        2       100.0
+                              PFUMX        1       100.0
+                                PUR        1       100.0
+                                VHI       10       100.0
+                                VLO       12       100.0
+SUB MODULES 
+                               FIR8        1       100.0
+                         FIR8_asinc        1       100.0
+                              FIR_0        1       100.0
+                              FIR_1        1       100.0
+                  FleaFPGA_FM_Radio        1       100.0
+                            circuit        1       100.0
+             lfxp2_pll_25M_50M_8M33        1       100.0
+             lfxp2_pll_50M_360M_10M        1       100.0
+                        loop_filter        1       100.0
+                         multiplier        1       100.0
+                                nco        1       100.0
+                             rf_pll        1       100.0
+                         simple_PWM        1       100.0
+                            
+                         TOTAL          2267           
+----------------------------------------------------------------------
+Report for cell FleaFPGA_FM_Radio.netlist
+     Instance path:  digital_fm_radio
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B      414       100.0
+                             EPLLD1        2       100.0
+                            FD1P3BX       12       100.0
+                            FD1P3DX      308       100.0
+                            FD1S3AX        8       100.0
+                            FD1S3AY        1       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX      608       100.0
+                                INV        5       100.0
+                           ORCALUT4      807       100.0
+                           PDPW16KB        2       100.0
+                              PFUMX        1       100.0
+                                VHI        9        90.0
+                                VLO       11        91.7
+SUB MODULES 
+                               FIR8        1       100.0
+                         FIR8_asinc        1       100.0
+                              FIR_0        1       100.0
+                              FIR_1        1       100.0
+                            circuit        1       100.0
+             lfxp2_pll_25M_50M_8M33        1       100.0
+             lfxp2_pll_50M_360M_10M        1       100.0
+                        loop_filter        1       100.0
+                         multiplier        1       100.0
+                                nco        1       100.0
+                             rf_pll        1       100.0
+                         simple_PWM        1       100.0
+                            
+                         TOTAL          2205           
+----------------------------------------------------------------------
+Report for cell simple_PWM.netlist
+     Instance path:  digital_fm_radio.PWM0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B        7         1.7
+                            FD1S3DX       12         2.0
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL            21           
+----------------------------------------------------------------------
+Report for cell FIR_1.netlist
+  Original Cell name FIR
+     Instance path:  digital_fm_radio.FIR2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       75        18.1
+                            FD1P3DX      289        93.8
+                                INV        1        20.0
+                           ORCALUT4      213        26.4
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL           580           
+----------------------------------------------------------------------
+Report for cell circuit.netlist
+     Instance path:  digital_fm_radio.U3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B      131        31.6
+                            FD1S3BX        4        80.0
+                            FD1S3DX      457        75.2
+                           ORCALUT4      423        52.4
+                           PDPW16KB        2       100.0
+                              PFUMX        1       100.0
+                                VHI        4        40.0
+                                VLO        4        33.3
+SUB MODULES 
+                              FIR_0        1       100.0
+                        loop_filter        1       100.0
+                         multiplier        1       100.0
+                                nco        1       100.0
+                            
+                         TOTAL          1030           
+----------------------------------------------------------------------
+Report for cell nco.netlist
+     Instance path:  digital_fm_radio.U3.I2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       18         4.3
+                            FD1S3BX        4        80.0
+                            FD1S3DX       18         3.0
+                           ORCALUT4       28         3.5
+                           PDPW16KB        2       100.0
+                              PFUMX        1       100.0
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL            73           
+----------------------------------------------------------------------
+Report for cell loop_filter.netlist
+     Instance path:  digital_fm_radio.U3.I3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B        7         1.7
+                            FD1S3DX       20         3.3
+                           ORCALUT4       27         3.3
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL            56           
+----------------------------------------------------------------------
+Report for cell FIR_0.netlist
+  Original Cell name FIR
+     Instance path:  digital_fm_radio.U3.I4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       75        18.1
+                            FD1S3DX      289        47.5
+                           ORCALUT4      214        26.5
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL           580           
+----------------------------------------------------------------------
+Report for cell multiplier.netlist
+     Instance path:  digital_fm_radio.U3.I1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       31         7.5
+                            FD1S3DX      130        21.4
+                           ORCALUT4      154        19.1
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL           317           
+----------------------------------------------------------------------
+Report for cell FIR8_asinc.netlist
+     Instance path:  digital_fm_radio.FIR1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       57        13.8
+                            FD1S3DX       42         6.9
+                           ORCALUT4       79         9.8
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL           180           
+----------------------------------------------------------------------
+Report for cell FIR8.netlist
+     Instance path:  digital_fm_radio.FIR0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2B       57        13.8
+                            FD1S3DX       42         6.9
+                           ORCALUT4       79         9.8
+                                VHI        1        10.0
+                                VLO        1         8.3
+                            
+                         TOTAL           180           
+----------------------------------------------------------------------
+Report for cell rf_pll.netlist
+     Instance path:  digital_fm_radio.U2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             EPLLD1        2       100.0
+                                VLO        2        16.7
+SUB MODULES 
+             lfxp2_pll_25M_50M_8M33        1       100.0
+             lfxp2_pll_50M_360M_10M        1       100.0
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell lfxp2_pll_50M_360M_10M.netlist
+     Instance path:  digital_fm_radio.U2.pll_50M_360M_10M
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             EPLLD1        1        50.0
+                                VLO        1         8.3
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell lfxp2_pll_25M_50M_8M33.netlist
+     Instance path:  digital_fm_radio.U2.pll_25M_50M_8M33
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             EPLLD1        1        50.0
+                                VLO        1         8.3
+                            
+                         TOTAL             2           

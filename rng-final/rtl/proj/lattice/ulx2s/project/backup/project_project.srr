@@ -1,0 +1,44 @@
+#Build: Synplify Pro J-2015.03L-SP1, Build 123R, Aug 18 2015
+#install: C:\lscc\diamond\3.6_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: EDGEMASTER-PC
+
+#Implementation: project
+
+Synopsys HDL Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys VHDL Compiler, version comp201503sp1p1, Build 117R, built Aug 18 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.6_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\ulx2s_toplevel.vhd":40:7:40:20|Top entity is set to ulx2s_fm_radio.
+VHDL syntax check successful!
+@N: CD630 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\ulx2s_toplevel.vhd":40:7:40:20|Synthesizing work.ulx2s_fm_radio.arch 
+@N: CD630 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":42:7:42:23|Synthesizing work.fleafpga_fm_radio.behavior 
+@E: CD326 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":104:14:104:22|Port btn_up of entity work.fir8 is unconnected
+@E: CD326 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":113:14:113:22|Port btn_up of entity work.fir8 is unconnected
+@W: CG296 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":162:0:162:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":164:7:164:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":179:0:179:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":181:7:181:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":192:0:192:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":194:7:194:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":212:0:212:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":214:7:214:9|Referenced variable rst is not in sensitivity list
+@W: CD638 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":66:9:66:19|Signal lpf_output2 is undriven 
+@W: CD638 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":68:9:68:20|Signal input_sample is undriven 
+@W: CD638 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":72:9:72:22|Signal input_sample40 is undriven 
+@W: CD638 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd":73:9:73:22|Signal input_sample41 is undriven 
+2 errors during synthesis
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jan 21 12:39:26 2016
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jan 21 12:39:26 2016
+
+###########################################################]

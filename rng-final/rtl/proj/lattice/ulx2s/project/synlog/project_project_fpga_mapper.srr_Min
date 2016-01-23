@@ -1,0 +1,589 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jan 22 00:15:25 2016
+#
+
+
+Top view:               ulx2s_fm_radio
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.000
+
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+                                                          Requested     Estimated     Requested     Estimated                 Clock                                                          Clock              
+Starting Clock                                            Frequency     Frequency     Period        Period        Slack       Type                                                           Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FleaFPGA_FM_Radio|long_timer_derived_clock[19]            1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]     1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock)     Inferred_clkgroup_0
+FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]            1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock               1.0 MHz       131.8 MHz     1000.000      7.589         992.411     inferred                                                       Inferred_clkgroup_1
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock               1.0 MHz       92.7 MHz      1000.000      10.783        989.217     inferred                                                       Inferred_clkgroup_4
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock               1.0 MHz       183.8 MHz     1000.000      5.440         994.560     inferred                                                       Inferred_clkgroup_0
+ulx2s_fm_radio|btn_up                                     1.0 MHz       NA            1000.000      NA            NA          inferred                                                       Inferred_clkgroup_2
+ulx2s_fm_radio|clk_25m                                    1.0 MHz       92.7 MHz      1000.000      10.783        989.217     inferred                                                       Inferred_clkgroup_3
+System                                                    1.0 MHz       1.0 MHz       1000.000      1000.000      0.000       system                                                         system_clkgroup    
+================================================================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                     Ending                                       |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                       System                                       |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  0.000       0.516  |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  |  0.000       1.021  |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  ulx2s_fm_radio|clk_25m                       |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  System                                       |  0.000       0.696  |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  0.000       0.513  |  0.000       1.041  |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  ulx2s_fm_radio|btn_up                        |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  ulx2s_fm_radio|clk_25m                       |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+ulx2s_fm_radio|clk_25m                       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+ulx2s_fm_radio|clk_25m                       ulx2s_fm_radio|clk_25m                       |  0.000       0.535  |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  |  0.000       0.535  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                                 Arrival          
+Instance                                Reference                                       Type        Pin     Net                  Time        Slack
+                                        Clock                                                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I4.d15[0]           lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       d15[0]               0.651       0.513
+digital_fm_radio.FIR2.d15[0]            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       d15[0]               0.651       0.513
+digital_fm_radio.U3.I2.dtemp_pipe_4     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       un4_dtemp            0.651       0.513
+digital_fm_radio.U3.I1.part0[1]         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       part0[1]             0.651       0.513
+digital_fm_radio.U3.I1.part1[0]         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       part1[0]             0.651       0.513
+digital_fm_radio.U3.I1.part3[1]         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       part3[1]             0.651       0.513
+digital_fm_radio.U3.I1.part4[0]         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       part4[0]             0.651       0.513
+digital_fm_radio.sample_cntr[3]         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       sample_cntr[3]       0.651       0.513
+digital_fm_radio.U3.I4.data_out[0]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       input_sample2[0]     0.600       0.535
+digital_fm_radio.U3.I4.data_out[1]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       input_sample2[1]     0.600       0.535
+==================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                            Starting                                                                                   Required          
+Instance                                    Reference                                       Type        Pin     Net                    Time         Slack
+                                            Clock                                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dtemp_pipe_4         lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       dtemp[4]               0.428        0.513
+digital_fm_radio.U3.I1.out_temp_pipe_20     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       un41_out_temp_8[4]     0.428        0.513
+digital_fm_radio.U3.I1.out_temp_pipe_32     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       un41_out_temp_6[1]     0.428        0.513
+digital_fm_radio.sample_cntr[3]             lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sample_cntr_RNO[3]     0.428        0.513
+digital_fm_radio.FIR2.sum_pipe_46           lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       un28_sum_17[0]         0.428        0.513
+digital_fm_radio.U3.I4.sum_pipe_46          lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       un28_sum_17[0]         0.428        0.513
+digital_fm_radio.FIR2.d0[0]                 lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       input_sample2[0]       0.065        0.535
+digital_fm_radio.FIR2.d0[1]                 lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       input_sample2[1]       0.065        0.535
+digital_fm_radio.FIR2.d0[2]                 lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       input_sample2[2]       0.065        0.535
+digital_fm_radio.FIR2.d0[3]                 lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       input_sample2[3]       0.065        0.535
+=========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.941
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.428
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.513
+
+    Number of logic level(s):                1
+    Starting point:                          digital_fm_radio.U3.I4.d15[0] / Q
+    Ending point:                            digital_fm_radio.U3.I4.sum_pipe_46 / D
+    The start point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I4.d15[0]                FD1S3DX      Q        Out     0.651     0.651       -         
+d15[0]                                       Net          -        -       -         -           2         
+digital_fm_radio.U3.I4.un28_sum_17_axb_0     ORCALUT4     B        In      0.000     0.651       -         
+digital_fm_radio.U3.I4.un28_sum_17_axb_0     ORCALUT4     Z        Out     0.290     0.941       -         
+un28_sum_17[0]                               Net          -        -       -         -           1         
+digital_fm_radio.U3.I4.sum_pipe_46           FD1S3DX      D        In      0.000     0.941       -         
+===========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                                       Arrival          
+Instance                         Reference                                       Type        Pin     Net        Time        Slack
+                                 Clock                                                                                           
+---------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.d0[0]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d0[7]      0.600       0.535
+digital_fm_radio.FIR0.d0[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d0[6]      0.600       0.535
+digital_fm_radio.FIR0.d1[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d1[6]      0.696       0.631
+digital_fm_radio.FIR0.d3[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d3[6]      0.696       0.631
+digital_fm_radio.FIR0.d10[4]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d9f[6]     0.696       0.631
+digital_fm_radio.FIR0.d13[4]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d13[6]     0.696       0.631
+digital_fm_radio.FIR0.d2[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d2[6]      0.724       0.660
+digital_fm_radio.FIR0.d4[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d4[6]      0.724       0.660
+digital_fm_radio.FIR0.d5[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d5[6]      0.724       0.660
+digital_fm_radio.FIR0.d6[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d6[6]      0.724       0.660
+=================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                                                       Required          
+Instance                         Reference                                       Type        Pin     Net        Time         Slack
+                                 Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.d1[0]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d0[7]      0.065        0.535
+digital_fm_radio.FIR0.d1[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d0[6]      0.065        0.535
+digital_fm_radio.FIR0.d2[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d1[6]      0.065        0.631
+digital_fm_radio.FIR0.d4[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d3[6]      0.065        0.631
+digital_fm_radio.FIR0.d11[4]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d9f[6]     0.065        0.631
+digital_fm_radio.FIR0.d14[4]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d13[6]     0.065        0.631
+digital_fm_radio.FIR0.d3[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d2[6]      0.065        0.660
+digital_fm_radio.FIR0.d5[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d4[6]      0.065        0.660
+digital_fm_radio.FIR0.d6[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d5[6]      0.065        0.660
+digital_fm_radio.FIR0.d7[4]      lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d6[6]      0.065        0.660
+==================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.600
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.065
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.535
+
+    Number of logic level(s):                0
+    Starting point:                          digital_fm_radio.FIR0.d0[0] / Q
+    Ending point:                            digital_fm_radio.FIR0.d1[0] / D
+    The start point is clocked by            lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.d0[0]     FD1S3DX     Q        Out     0.600     0.600       -         
+d0[7]                           Net         -        -       -         -           1         
+digital_fm_radio.FIR0.d1[0]     FD1S3DX     D        In      0.000     0.600       -         
+=============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                           Starting                                                                                      Arrival          
+Instance                                   Reference                                       Type        Pin     Net                       Time        Slack
+                                           Clock                                                                                                          
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.phase_accumulator[31]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[31]     0.651       1.021
+digital_fm_radio.phase_accumulator[1]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[1]      0.651       1.300
+digital_fm_radio.phase_accumulator[2]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[2]      0.651       1.300
+digital_fm_radio.phase_accumulator[3]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[3]      0.651       1.300
+digital_fm_radio.phase_accumulator[4]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[4]      0.651       1.300
+digital_fm_radio.phase_accumulator[5]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[5]      0.651       1.300
+digital_fm_radio.phase_accumulator[6]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[6]      0.651       1.300
+digital_fm_radio.phase_accumulator[7]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[7]      0.651       1.300
+digital_fm_radio.phase_accumulator[8]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[8]      0.651       1.300
+digital_fm_radio.phase_accumulator[9]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[9]      0.651       1.300
+==========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                           Starting                                                                                                        Required          
+Instance                                   Reference                                       Type         Pin     Net                                        Time         Slack
+                                           Clock                                                                                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio_input_sample3io[4]        lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     IFS1P3DX     SP      un1_phase_accumulator_0_s_31_0_RNIQ0HH     0.209        1.021
+digital_fm_radio.input_sample3[0]          lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1P3DX      SP      un1_phase_accumulator_0_s_31_0_RNIQ0HH     0.209        1.021
+digital_fm_radio.phase_accumulator[31]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_0_s_31_0_S0          0.065        1.238
+digital_fm_radio.phase_accumulator[1]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_1_0_S0           -0.048       1.300
+digital_fm_radio.phase_accumulator[2]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_1_0_S1           -0.048       1.300
+digital_fm_radio.phase_accumulator[3]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_3_0_S0           -0.048       1.300
+digital_fm_radio.phase_accumulator[4]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_3_0_S1           -0.048       1.300
+digital_fm_radio.phase_accumulator[5]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_5_0_S0           -0.048       1.300
+digital_fm_radio.phase_accumulator[6]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_5_0_S1           -0.048       1.300
+digital_fm_radio.phase_accumulator[7]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_7_0_S0           -0.048       1.300
+=============================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.230
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.209
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 1.021
+
+    Number of logic level(s):                1
+    Starting point:                          digital_fm_radio.phase_accumulator[31] / Q
+    Ending point:                            digital_fm_radio_input_sample3io[4] / SP
+    The start point is clocked by            lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock [rising] on pin SCLK
+
+Instance / Net                                                           Pin      Pin               Arrival     No. of    
+Name                                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.phase_accumulator[31]                      FD1S3DX      Q        Out     0.651     0.651       -         
+phase_accumulator[31]                                       Net          -        -       -         -           2         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0_RNIQ0HH     ORCALUT4     A        In      0.000     0.651       -         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0_RNIQ0HH     ORCALUT4     Z        Out     0.579     1.230       -         
+un1_phase_accumulator_0_s_31_0_RNIQ0HH                      Net          -        -       -         -           2         
+digital_fm_radio_input_sample3io[4]                         IFS1P3DX     SP       In      0.000     1.230       -         
+==========================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: ulx2s_fm_radio|clk_25m
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                  Arrival          
+Instance                         Reference                  Type        Pin     Net        Time        Slack
+                                 Clock                                                                      
+------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.d0[0]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d0[7]      0.600       0.535
+digital_fm_radio.FIR1.d0[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d0[6]      0.600       0.535
+digital_fm_radio.FIR1.d1[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d1[6]      0.696       0.631
+digital_fm_radio.FIR1.d3[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d3[6]      0.696       0.631
+digital_fm_radio.FIR1.d10[4]     ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d9f[6]     0.696       0.631
+digital_fm_radio.FIR1.d13[4]     ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d13[6]     0.696       0.631
+digital_fm_radio.FIR1.d2[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d2[6]      0.724       0.660
+digital_fm_radio.FIR1.d4[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d4[6]      0.724       0.660
+digital_fm_radio.FIR1.d5[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d5[6]      0.724       0.660
+digital_fm_radio.FIR1.d6[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d6[6]      0.724       0.660
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                 Starting                                                  Required          
+Instance                         Reference                  Type        Pin     Net        Time         Slack
+                                 Clock                                                                       
+-------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.d1[0]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d0[7]      0.065        0.535
+digital_fm_radio.FIR1.d1[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d0[6]      0.065        0.535
+digital_fm_radio.FIR1.d2[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d1[6]      0.065        0.631
+digital_fm_radio.FIR1.d4[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d3[6]      0.065        0.631
+digital_fm_radio.FIR1.d11[4]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       d9f[6]     0.065        0.631
+digital_fm_radio.FIR1.d14[4]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       d13[6]     0.065        0.631
+digital_fm_radio.FIR1.d3[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d2[6]      0.065        0.660
+digital_fm_radio.FIR1.d5[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d4[6]      0.065        0.660
+digital_fm_radio.FIR1.d6[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d5[6]      0.065        0.660
+digital_fm_radio.FIR1.d7[4]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       d6[6]      0.065        0.660
+=============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.600
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             0.065
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.535
+
+    Number of logic level(s):                0
+    Starting point:                          digital_fm_radio.FIR1.d0[0] / Q
+    Ending point:                            digital_fm_radio.FIR1.d1[0] / D
+    The start point is clocked by            ulx2s_fm_radio|clk_25m [rising] on pin CK
+    The end   point is clocked by            ulx2s_fm_radio|clk_25m [rising] on pin CK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                            Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.d0[0]     FD1S3DX     Q        Out     0.600     0.600       -         
+d0[7]                           Net         -        -       -         -           1         
+digital_fm_radio.FIR1.d1[0]     FD1S3DX     D        In      0.000     0.600       -         
+=============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                   Starting                                             Arrival          
+Instance                                           Reference     Type         Pin       Net             Time        Slack
+                                                   Clock                                                                 
+-------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     System        EPLLD1       CLKOP     clk_50M         0.000       0.000
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO1       N_3421_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO1       N_3421_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO2       N_3422_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO2       N_3422_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO3       N_3423_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO3       N_3423_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO4       N_3424_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO4       N_3424_reto     0.000       0.516
+digital_fm_radio.U3.I2.dout_2_0_0                  System        PDPW16KB     DO5       N_3425_reto     0.000       0.516
+=========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                   Starting                                           Required          
+Instance                                           Reference     Type        Pin       Net            Time         Slack
+                                                   Clock                                                                
+------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     System        EPLLD1      CLKFB     clk_50M        0.000        0.000
+digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     System        EPLLD1      CLKI      clk_50M        0.000        0.000
+digital_fm_radio.U3.I1.part1[0]                    System        FD1S3DX     D         part1_5[0]     0.428        0.516
+digital_fm_radio.U3.I1.part1[1]                    System        FD1S3DX     D         part1_5[1]     0.428        0.516
+digital_fm_radio.U3.I1.part1[2]                    System        FD1S3DX     D         part1_5[2]     0.428        0.516
+digital_fm_radio.U3.I1.part1[3]                    System        FD1S3DX     D         part1_5[3]     0.428        0.516
+digital_fm_radio.U3.I1.part1[4]                    System        FD1S3DX     D         part1_5[4]     0.428        0.516
+digital_fm_radio.U3.I1.part1[5]                    System        FD1S3DX     D         part1_5[5]     0.428        0.516
+digital_fm_radio.U3.I1.part1[6]                    System        FD1S3DX     D         part1_5[6]     0.428        0.516
+digital_fm_radio.U3.I1.part1[7]                    System        FD1S3DX     D         part1_5[7]     0.428        0.516
+========================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     0.000
+
+    Number of logic level(s):                0
+    Starting point:                          digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0 / CLKOP
+    Ending point:                            digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0 / CLKFB
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                Pin       Pin               Arrival     No. of    
+Name                                               Type       Name      Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     EPLLD1     CLKOP     Out     0.000     0.000       -         
+clk_50M                                            Net        -         -       -         -           2         
+digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     EPLLD1     CLKFB     In      0.000     0.000       -         
+================================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        0.000
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.000
+    - Clock delay at ending point:           0.000 (ideal)
+0.000
+    = Slack (critical) :                     0.000
+
+    Number of logic level(s):                0
+    Starting point:                          digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0 / CLKOP
+    Ending point:                            digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0 / CLKI
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                Pin       Pin               Arrival     No. of    
+Name                                               Type       Name      Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     EPLLD1     CLKOP     Out     0.000     0.000       -         
+clk_50M                                            Net        -         -       -         -           2         
+digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     EPLLD1     CLKI      In      0.000     0.000       -         
+================================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        0.944
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.428
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.516
+
+    Number of logic level(s):                3
+    Starting point:                          digital_fm_radio.U3.I2.dout_2_0_0 / DO1
+    Ending point:                            digital_fm_radio.U3.I1.part1[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dout_2_0_0           PDPW16KB     DO1      Out     0.000     0.000       -         
+N_3421_reto                                 Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.dout_6_RNO[1]        ORCALUT4     D        In      0.000     0.000       -         
+digital_fm_radio.U3.I2.dout_6_RNO[1]        ORCALUT4     Z        Out     0.528     0.528       -         
+N_32                                        Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.dout_6[1]            ORCALUT4     A        In      0.000     0.528       -         
+digital_fm_radio.U3.I2.dout_6[1]            ORCALUT4     Z        Out     0.126     0.654       -         
+dout[1]                                     Net          -        -       -         -           18        
+digital_fm_radio.U3.I1.part1_5_3_0_0[0]     ORCALUT4     C        In      0.000     0.654       -         
+digital_fm_radio.U3.I1.part1_5_3_0_0[0]     ORCALUT4     Z        Out     0.290     0.944       -         
+part1_5[0]                                  Net          -        -       -         -           1         
+digital_fm_radio.U3.I1.part1[0]             FD1S3DX      D        In      0.000     0.944       -         
+==========================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        0.944
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.428
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.516
+
+    Number of logic level(s):                3
+    Starting point:                          digital_fm_radio.U3.I2.dout_2_0_0 / DO1
+    Ending point:                            digital_fm_radio.U3.I1.part1[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dout_2_0_0           PDPW16KB     DO1      Out     0.000     0.000       -         
+N_3421_reto                                 Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.dout_6_RNO[1]        ORCALUT4     D        In      0.000     0.000       -         
+digital_fm_radio.U3.I2.dout_6_RNO[1]        ORCALUT4     Z        Out     0.528     0.528       -         
+N_32                                        Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.dout_6[1]            ORCALUT4     A        In      0.000     0.528       -         
+digital_fm_radio.U3.I2.dout_6[1]            ORCALUT4     Z        Out     0.126     0.654       -         
+dout[1]                                     Net          -        -       -         -           18        
+digital_fm_radio.U3.I1.part1_5_3_0_0[0]     ORCALUT4     C        In      0.000     0.654       -         
+digital_fm_radio.U3.I1.part1_5_3_0_0[0]     ORCALUT4     Z        Out     0.290     0.944       -         
+part1_5[0]                                  Net          -        -       -         -           1         
+digital_fm_radio.U3.I1.part1[0]             FD1S3DX      D        In      0.000     0.944       -         
+==========================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        0.944
+    + Clock delay at starting point:         0.000 (ideal)
+-0.000
+    - Requested Period:                      0.000
+    - Hold time:                             0.428
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 0.516
+
+    Number of logic level(s):                3
+    Starting point:                          digital_fm_radio.U3.I2.dout_2_0_0 / DO2
+    Ending point:                            digital_fm_radio.U3.I1.part2[0] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dout_2_0_0         PDPW16KB     DO2      Out     0.000     0.000       -         
+N_3422_reto                               Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.dout_6_RNO[2]      ORCALUT4     D        In      0.000     0.000       -         
+digital_fm_radio.U3.I2.dout_6_RNO[2]      ORCALUT4     Z        Out     0.528     0.528       -         
+N_33                                      Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.dout_6[2]          ORCALUT4     A        In      0.000     0.528       -         
+digital_fm_radio.U3.I2.dout_6[2]          ORCALUT4     Z        Out     0.126     0.654       -         
+dout[2]                                   Net          -        -       -         -           18        
+digital_fm_radio.U3.I1.part2_3_3_0[0]     ORCALUT4     C        In      0.000     0.654       -         
+digital_fm_radio.U3.I1.part2_3_3_0[0]     ORCALUT4     Z        Out     0.290     0.944       -         
+part2_3[0]                                Net          -        -       -         -           1         
+digital_fm_radio.U3.I1.part2[0]           FD1S3DX      D        In      0.000     0.944       -         
+========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

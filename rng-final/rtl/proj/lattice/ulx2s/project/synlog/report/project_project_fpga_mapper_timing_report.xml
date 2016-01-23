@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synlog\project_project_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>FleaFPGA_FM_Radio|long_timer_derived_clock[19]</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>131.8 MHz</data>
+<data>992.411</data>
+</row>
+<row>
+<data>lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>92.7 MHz</data>
+<data>989.217</data>
+</row>
+<row>
+<data>lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>183.8 MHz</data>
+<data>994.560</data>
+</row>
+<row>
+<data>ulx2s_fm_radio|btn_up</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+<row>
+<data>ulx2s_fm_radio|clk_25m</data>
+<data>1.0 MHz</data>
+<data>92.7 MHz</data>
+<data>989.217</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>216.8 MHz</data>
+<data>995.386</data>
+</row>
+</report_table>

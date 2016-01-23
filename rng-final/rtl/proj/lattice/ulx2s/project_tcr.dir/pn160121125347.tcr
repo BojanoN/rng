@@ -1,0 +1,6 @@
+#Start recording tcl command: 1/21/2016 12:24:06
+#Project Location: C:/Users/Edgemaster/Desktop/rng/flearadio-master/rtl/proj/lattice/ulx2s; Project name: project
+prj_project open "C:/Users/Edgemaster/Desktop/rng/flearadio-master/rtl/proj/lattice/ulx2s/project.ldf"
+prj_src add "C:/Users/Edgemaster/Desktop/rng/flearadio-master/rtl/proj/lattice/ulx2s/reg.vhd"
+prj_run Export -impl project -task Bitgen
+#Stop recording: 1/21/2016 12:53:47

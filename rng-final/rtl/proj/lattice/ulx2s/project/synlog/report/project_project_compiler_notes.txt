@@ -1,0 +1,21 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.5_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":40:7:40:20|Top entity is set to ulx2s_fm_radio.
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":40:7:40:20|Synthesizing work.ulx2s_fm_radio.arch 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":42:7:42:23|Synthesizing work.fleafpga_fm_radio.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\simple_PWM.vhd":47:7:47:16|Synthesizing work.simple_pwm.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":10:7:10:9|Synthesizing work.fir.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_top.vhd":13:7:13:13|Synthesizing work.circuit.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":14:7:14:9|Synthesizing work.nco.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":14:7:14:17|Synthesizing work.loop_filter.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":16:7:16:16|Synthesizing work.multiplier.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":17:7:17:16|Synthesizing work.fir8_asinc.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":17:7:17:10|Synthesizing work.fir8.behavior 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_rf_pll.vhd":5:7:5:12|Synthesizing work.rf_pll.x 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_50M_360M_10M.vhd":14:7:14:28|Synthesizing work.lfxp2_pll_50m_360m_10m.structure 
+@N: CD630 :"C:\lscc\diamond\3.5_x64\cae_library\synthesis\vhdl\xp2.vhd":767:10:767:15|Synthesizing work.eplld1.syn_black_box 
+@N: CD630 :"C:\lscc\diamond\3.5_x64\cae_library\synthesis\vhdl\xp2.vhd":1537:10:1537:12|Synthesizing work.vlo.syn_black_box 
+@N: CD630 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_25M_50M_8M33.vhd":14:7:14:28|Synthesizing work.lfxp2_pll_25m_50m_8m33.structure 
+@N|Running in 64-bit mode
+

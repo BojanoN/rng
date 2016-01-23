@@ -1,0 +1,1458 @@
+
+        Lattice Mapping Report File for Design Module 'ulx2s_fm_radio'
+
+
+Design Information
+------------------
+
+Command line:   map -a LatticeXP2 -p LFXP2-8E -t TQFP144 -s 6 -oc Commercial
+     project_project.ngd -o project_project_map.ncd -pr project_project.prf -mp
+     project_project.mrp -lpf C:/Users/Bojan/Documents/rngfinal/flearadio-master
+     -final/rtl/proj/lattice/ulx2s/project/project_project_synplify.lpf -lpf C:/
+     Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2
+     s/ulx2s.lpf -c 0 -gui -msgset C:/Users/Bojan/Documents/rngfinal/flearadio-m
+     aster-final/rtl/proj/lattice/ulx2s/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFXP2-8ETQFP144
+Target Performance:   6
+Mapper:  mg5a00,  version:  Diamond (64-bit) 3.5.0.102
+Mapped on:  01/22/16  00:15:28
+
+Design Summary
+--------------
+
+   Number of registers:    951 out of  6564 (14%)
+      PFU registers:          942 out of  6264 (15%)
+      PIO registers:            9 out of   300 (3%)
+   Number of SLICEs:       831 out of  4176 (20%)
+      SLICEs as Logic/ROM:    831 out of  4176 (20%)
+      SLICEs as RAM:            0 out of   756 (0%)
+      SLICEs as Carry:        414 out of  4176 (10%)
+   Number of LUT4s:        1651 out of  8352 (20%)
+      Number of logic LUTs:      823
+      Number of distributed RAM:   0 (0 LUT4s)
+      Number of ripple logic:    414 (828 LUT4s)
+      Number of shift registers:   0
+   Number of PIO sites used: 48 out of 100 (48%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  2 out of 2 (100%)
+   Number of block RAMs:  2 out of 12 (17%)
+   Number of CLKDIVs:  0 out of 2 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT36X36B          0
+   MULT18X18B          0
+   MULT18X18MACB       0
+   MULT18X18ADDSUBB    0
+   MULT18X18ADDSUBSUMB 0
+   MULT9X9B            0
+   MULT9X9ADDSUBB      0
+   MULT9X9ADDSUBSUMB   0
+
+                                    Page 1
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Design Summary (cont)
+---------------------
+   --------------------------------
+   Number of Used DSP Sites:  0 out of 32 (0 %)
+   Number of clocks:  6
+     Net clk_25m_c: 29 loads, 29 rising, 0 falling (Driver: PIO clk_25m )
+     Net btn_up_c: 8 loads, 8 rising, 0 falling (Driver: PIO btn_up )
+     Net digital_fm_radio.phase_accumulatorgen[31]: 19 loads, 19 rising, 0
+     falling (Driver: digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0 )
+     Net digital_fm_radio/sample_cntrgen[3]: 415 loads, 409 rising, 6 falling
+     (Driver: digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0 )
+     Net digital_fm_radio/clk_10MHz: 21 loads, 21 rising, 0 falling (Driver:
+     digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0 )
+     Net digital_fm_radio/U2/clk_50M: 2 loads, 2 rising, 0 falling (Driver:
+     digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0 )
+   Number of Clock Enables:  3
+     Net un1_phase_accumulator_0_s_31_0_RNIQ0HH: 2 loads, 1 LSLICEs
+     Net digital_fm_radio/long_timer_RNIGN4E[19]: 15 loads, 15 LSLICEs
+     Net digital_fm_radio/sample_cntr_RNIMNCE[3]: 145 loads, 145 LSLICEs
+   Number of local set/reset loads for net btn_center_c merged into GSR:  481
+   Number of LSRs:  1
+     Net digital_fm_radio/PLL_RESET: 234 loads, 234 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net digital_fm_radio/PLL_RESET: 235 loads
+     Net digital_fm_radio/sample_cntr_RNIMNCE[3]: 145 loads
+     Net digital_fm_radio/VCC: 125 loads
+     Net digital_fm_radio/FIR2/VCC: 71 loads
+     Net digital_fm_radio/U3/I4/VCC: 70 loads
+     Net digital_fm_radio/FIR0/VCC: 59 loads
+     Net digital_fm_radio/FIR1/VCC: 59 loads
+     Net digital_fm_radio/U3/I2/VCC: 31 loads
+     Net digital_fm_radio/N_3605_i: 30 loads
+     Net btn_left_c: 29 loads
+
+
+
+
+   Number of warnings:  76
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(108): Semantic error in "LOCATE COMP "j1_5" SITE
+     "138" ;": COMP "j1_5" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(109): Semantic error in "LOCATE COMP "j1_6" SITE
+     "6" ;": COMP "j1_6" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(110): Semantic error in "LOCATE COMP "j1_7" SITE
+     "5" ;": COMP "j1_7" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+
+                                    Page 2
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Design Errors/Warnings (cont)
+-----------------------------
+     /lattice/ulx2s/ulx2s.lpf(113): Semantic error in "LOCATE COMP "j1_10" SITE
+     "1" ;": COMP "j1_10" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(114): Semantic error in "LOCATE COMP "j1_11" SITE
+     "2" ;": COMP "j1_11" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(115): Semantic error in "LOCATE COMP "j1_12" SITE
+     "144" ;": COMP "j1_12" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(143): Semantic error in "LOCATE COMP "j2_14" SITE
+     "38" ;": COMP "j2_14" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(144): Semantic error in "LOCATE COMP "j2_15" SITE
+     "22" ;": COMP "j2_15" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(146): Semantic error in "LOCATE COMP "j2_17" SITE
+     "29" ;": COMP "j2_17" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(147): Semantic error in "LOCATE COMP "j2_18" SITE
+     "37" ;": COMP "j2_18" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(148): Semantic error in "LOCATE COMP "j2_19" SITE
+     "36" ;": COMP "j2_19" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(149): Semantic error in "LOCATE COMP "j2_20" SITE
+     "35" ;": COMP "j2_20" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(150): Semantic error in "LOCATE COMP "j2_21" SITE
+     "32" ;": COMP "j2_21" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(151): Semantic error in "LOCATE COMP "j2_22" SITE
+     "27" ;": COMP "j2_22" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(152): Semantic error in "LOCATE COMP "j2_23" SITE
+     "28" ;": COMP "j2_23" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(163): Semantic error in "IOBUF PORT "sw[0]"
+     PULLMODE=DOWN ;": Port "sw[0]" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(164): Semantic error in "IOBUF PORT "sw[1]"
+     PULLMODE=DOWN ;": Port "sw[1]" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+
+                                    Page 3
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Design Errors/Warnings (cont)
+-----------------------------
+     /lattice/ulx2s/ulx2s.lpf(165): Semantic error in "IOBUF PORT "sw[2]"
+     PULLMODE=DOWN ;": Port "sw[2]" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(166): Semantic error in "IOBUF PORT "sw[3]"
+     PULLMODE=DOWN ;": Port "sw[3]" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(168): Semantic error in "IOBUF PORT "btn_down"
+     PULLMODE=DOWN ;": Port "btn_down" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj
+     /lattice/ulx2s/ulx2s.lpf(174): Semantic error in "IOBUF PORT "sdcard_so"
+     PULLMODE=UP ;": Port "sdcard_so" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: Preference parsing results:  21 semantic errors detected.
+WARNING - map: Using local reset signal 'btn_center_c' to infer global GSR net.
+WARNING - map: IO buffer missing for top level port rs232_rx...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port flash_so...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sdcard_so...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port btn_down...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sw[3:0](3)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sw[3:0](2)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sw[3:0](1)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sw[3:0](0)...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_8...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_9...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_13...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_14...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_15...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_16...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_17...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_18...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_19...logic will be
+
+                                    Page 4
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Design Errors/Warnings (cont)
+-----------------------------
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_20...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_21...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_22...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j1_23...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_5...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_6...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_7...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_8...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_9...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_10...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_11...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_12...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port j2_13...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](15)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](14)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](13)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](12)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](11)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](10)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](9)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](8)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](7)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](6)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](5)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](4)...logic will
+
+                                    Page 5
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Design Errors/Warnings (cont)
+-----------------------------
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](3)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](2)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](1)...logic will
+     be discarded.
+WARNING - map: IO buffer missing for top level port sram_d[15:0](0)...logic will
+     be discarded.
+WARNING - map: There are semantic errors in the preference file C:/Users/Bojan/D
+     ocuments/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s/ulx2s.lpf.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+------------+
+| IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
+|                     |           |  IO_TYPE  | Register   |            |
++---------------------+-----------+-----------+------------+------------+
+| rs232_tx            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| clk_25m             | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_ubl            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_lbl            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_wel            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[18]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[17]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[16]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[15]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[14]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[13]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[12]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[11]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[10]          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[9]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[8]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[7]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[6]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[5]           | OUTPUT    | LVCMOS33  |            |            |
+
+                                    Page 6
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+------------+
+| sram_a[4]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[3]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[2]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[1]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sram_a[0]           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| j2_16               | INPUT     | LVCMOS33  | IN         |            |
++---------------------+-----------+-----------+------------+------------+
+| btn_center          | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| btn_up              | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| btn_right           | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| btn_left            | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| led[7]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[6]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[5]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[4]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[3]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[2]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[1]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| led[0]              | OUTPUT    | LVCMOS33  | OUT        |            |
++---------------------+-----------+-----------+------------+------------+
+| p_tip[3]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| p_tip[2]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| p_tip[1]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| p_tip[0]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| p_ring              | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sdcard_si           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sdcard_sck          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| sdcard_cen          | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| flash_si            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| flash_sck           | OUTPUT    | LVCMOS33  |            |            |
+
+                                    Page 7
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+------------+
+| flash_cen           | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+
+Removed logic
+-------------
+
+Block VCC undriven or does not drive anything - clipped.
+Signal digital_fm_radio/CN was merged into signal
+     digital_fm_radio/sample_cntrgen[3]
+Signal VCC undriven or does not drive anything - clipped.
+Signal digital_fm_radio/K_mod_control_6_cry_30_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/n_cry_0_S0[23] undriven or does not drive anything -
+     clipped.
+Signal digital_fm_radio/N_2 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/n_s_0_S1[30] undriven or does not drive anything -
+     clipped.
+Signal digital_fm_radio/n_s_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/N_3 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_3_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_3_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_5_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_5_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_7_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_7_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_9_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_9_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_11_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_11_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_13_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_13_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_15_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_15_0_S0 undriven or does not
+
+                                    Page 8
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_17_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_17_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_19_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_19_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_21_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_21_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_23_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_23_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_25_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_25_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_27_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_27_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_29_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_cry_29_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_s_31_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_0_s_31_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/N_4 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/un1_phase_accumulator_cry_29_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/un4_lpf_output3_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un4_lpf_output3_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/N_5 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/un4_lpf_output3_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un4_lpf_output3_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/input_sample4_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/input_sample4_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/N_6 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/input_sample4_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+
+                                    Page 9
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/input_sample4_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/N_7 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/un3_long_timer_cry_17_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/N_8 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_11_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_13_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_15_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_17_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_cry_17_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_s_19_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/un3_long_timer_1_s_19_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U2/pll_25M_50M_8M33/CLKINTFB undriven or does not drive
+     anything - clipped.
+
+                                   Page 10
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U2/pll_25M_50M_8M33/LOCK undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U2/pll_25M_50M_8M33/CLKOS undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U2/pll_50M_360M_10M/CLKINTFB_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U2/pll_50M_360M_10M/LOCK undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U2/pll_50M_360M_10M/CLKOS_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_17_cry_0_0_S1_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_17_cry_0_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_1 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_17_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_cry_0_0_S1_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_cry_0_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_2 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_s_11_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_s_11_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_4_cry_0_S1_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_4_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_3 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_4_s_11_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_8_4_s_11_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_6_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_4 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_6_0_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_6_0_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_5 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_0_s_11_0_COUT undriven or does not drive
+
+                                   Page 11
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_10_0_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_6 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_10_0_s_9_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_10_0_s_9_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_12_0_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_7 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_12_0_s_9_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_12_0_s_9_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_14_0_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_8 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_14_0_s_9_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_14_0_s_9_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_16_0_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/N_9 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_16_0_s_9_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR0/un28_sum_16_0_s_9_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_17_cry_0_0_S1_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_17_cry_0_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_1 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_17_cry_7_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_2 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_4_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_4_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_3 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_4_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_8_4_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_cry_0_0_S1_2 undriven or does not drive
+     anything - clipped.
+
+                                   Page 12
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/FIR1/un28_sum_0_cry_0_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_4 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_cry_1_0_S1_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_cry_1_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_cry_3_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_s_11_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_0_s_11_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_6_0_cry_0_S0_2 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_5 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_6_0_s_11_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_6_0_s_11_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_12_0_cry_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_6 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_12_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_12_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_14_0_cry_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_7 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_14_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_14_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_16_0_cry_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_8 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_16_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_16_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_10_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/N_9 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_10_0_s_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR1/un28_sum_10_0_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I1/part0_1_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I1/part0_1_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I1/N_1 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I1/part0_1_1_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+
+                                   Page 13
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U3/I1/un41_out_temp_9_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_9_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/N_2 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I1/un41_out_temp_9_cry_8_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/N_3 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_1_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_1_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_3_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_3_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_5_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_5_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_cry_7_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_s_15_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_0_s_15_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_6_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_6_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/N_4 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I1/un41_out_temp_6_cry_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_8_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/un41_out_temp_8_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I1/N_5 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I1/un41_out_temp_8_cry_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_17_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_17_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/N_1 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_17_cry_11_0_COUT undriven or does not
+     drive anything - clipped.
+
+                                   Page 14
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U3/I4/un28_sum_8_cry_0_0_S1_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_8_cry_0_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/N_2 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_8_s_15_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_8_s_15_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_8_4_cry_0_S1_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_8_4_cry_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/N_3 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_8_4_s_15_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_8_4_s_15_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/N_4 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_0_cry_1_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_cry_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_cry_3_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_0_s_15_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_6_0_cry_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/N_5 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_6_0_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_6_0_s_15_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_10_0_cry_0_S0_1 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/N_6 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_10_0_s_13_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_10_0_s_13_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_12_0_cry_0_S0_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/N_7 undriven or does not drive anything - clipped.
+     
+
+                                   Page 15
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U3/I4/un28_sum_12_0_s_13_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_12_0_s_13_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_14_0_cry_0_S0_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/N_8 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_14_0_s_13_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_14_0_s_13_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_16_0_cry_0_S0_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I4/N_9 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I4/un28_sum_16_0_s_13_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I4/un28_sum_16_0_s_13_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/U3/I3/dtemp_1_0_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I3/dtemp_1_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I3/N_1 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I3/dtemp_1_0_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I3/dtemp_1_0_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO35 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO34 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO33 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO32 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO31 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO30 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO29 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO28 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO27 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO26 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO25 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO24 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO23 undriven or does not drive
+     anything - clipped.
+
+                                   Page 16
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO22 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO21 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO20 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO19 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO18 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO17 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO16 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO15 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO14 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO13 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO12 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO11 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO10 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO9 undriven or does not drive anything
+     - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO8 undriven or does not drive anything
+     - clipped.
+Signal digital_fm_radio/U3/I2/dout_2_0_0_DO7 undriven or does not drive anything
+     - clipped.
+Signal digital_fm_radio/U3/I2/un1_dtemp1_2_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un1_dtemp1_2_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/N_4 undriven or does not drive anything - clipped.
+     
+Signal digital_fm_radio/U3/I2/un1_dtemp1_2_s_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un1_dtemp1_2_s_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un4_dout_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un4_dout_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/N_11 undriven or does not drive anything -
+     clipped.
+Signal digital_fm_radio/U3/I2/un4_dout_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un4_dtemp_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un4_dtemp_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/N_17 undriven or does not drive anything -
+     clipped.
+
+                                   Page 17
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/U3/I2/un4_dtemp_s_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/un4_dtemp_s_13_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO35 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO34 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO33 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO32 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO31 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO30 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO29 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO28 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO27 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO26 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO25 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO24 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO23 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO22 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO21 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO20 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO19 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO18 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO17 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO16 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO15 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/U3/I2/dout_5_0_0_DO14 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_17_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_17_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_1 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_17_cry_11_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_cry_0_0_S1_0 undriven or does not drive
+
+                                   Page 18
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_2 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_s_15_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_4_cry_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_4_cry_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_3 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_4_s_15_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_8_4_s_15_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_6_0_cry_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_4 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_6_0_s_15_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_6_0_s_15_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_cry_0_0_S1_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_cry_0_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_5 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_cry_1_0_S1_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_cry_1_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_cry_3_0_S0_1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_s_15_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_0_s_15_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_10_0_cry_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_6 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_10_0_s_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_10_0_s_13_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_12_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_7 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_12_0_s_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_12_0_s_13_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_14_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_8 undriven or does not drive anything - clipped.
+
+                                   Page 19
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+Removed logic (cont)
+--------------------
+Signal digital_fm_radio/FIR2/un28_sum_14_0_s_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_14_0_s_13_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_16_0_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/N_9 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_16_0_s_13_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/FIR2/un28_sum_16_0_s_13_0_COUT undriven or does not
+     drive anything - clipped.
+Signal digital_fm_radio/PWM0/un10_pwm_acc_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/PWM0/N_1 undriven or does not drive anything - clipped.
+Signal digital_fm_radio/PWM0/un10_pwm_acc_s_11_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/PWM0/un10_pwm_acc_s_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/K_mod_control_6_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/K_mod_control_6_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal digital_fm_radio/N_1 undriven or does not drive anything - clipped.
+Block digital_fm_radio/RESET_GEN.PLL_RESET.CN was optimized away.
+
+Memory Usage
+------------
+
+    
+         
+    INFO: Design contains pre-loadable EBR during configuration that has a
+         requirement:
+    Since the GSR is disabled for the EBR, make sure write enable and chip
+    enable are inactive during wake-up, so that the pre-loaded initialization
+    values will not be corrupted during wake-up state.
+
+
+
+
+/digital_fm_radio/U3/I2:
+    EBRs: 2
+    RAM SLICEs: 0
+    Logic SLICEs: 30
+    PFU Registers: 19
+    -Contains EBR dout_5_0_0:  TYPE= PDPW16KB,  Width= 14,  Depth_R= 512,
+         REGMODE= NOREG,  RESETMODE= SYNC,  GSR= DISABLED
+    -Contains EBR dout_2_0_0:  TYPE= PDPW16KB,  Width= 7,  Depth_R= 512,
+         REGMODE= NOREG,  RESETMODE= SYNC,  GSR= DISABLED
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                digital_fm_radio/U2/pll_50M_
+       360M_10M/PLLInst_0
+  PLL Type:                                         EPLLD
+
+                                   Page 20
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+PLL/DLL Summary (cont)
+----------------------
+  Input Clock:                             NODE     digital_fm_radio/U2/clk_50M
+  Output Clock(P):                         NODE
+       digital_fm_radio.phase_accumulatorgen[31]
+  Output Clock(S):                                  NONE
+  Output Clock(K):                         NODE     digital_fm_radio/clk_10MHz
+  PLL Feedback Signal:                     NODE
+       digital_fm_radio.phase_accumulatorgen[31]
+  PLL Reset Signal:                                 NONE
+  PLL K Divider Reset Signal:                       NONE
+  PLL LOCK Signal:                                  NONE
+  Dynamic Phase Adjust Input 0:                     NONE
+  Dynamic Phase Adjust Input 1:                     NONE
+  Dynamic Phase Adjust Input 2:                     NONE
+  Dynamic Phase Adjust Input 3:                     NONE
+  Dynamic Duty Adjust Input 0:                      NONE
+  Dynamic Duty Adjust Input 1:                      NONE
+  Dynamic Duty Adjust Input 2:                      NONE
+  Dynamic Duty Adjust Input 3:                      NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  360.0000
+  Output Clock(K) Frequency (MHz):                  10.0000
+  Output Clock(P) Actual Frequency:                 360.0000
+  CLKOP BYPASS:                                     DISABLED
+  CLKOS BYPASS:                                     DISABLED
+  CLKOK BYPASS:                                     DISABLED
+  CLKI Divider:                                     5
+  CLKFB Divider:                                    36
+  CLKOP Divider:                                    2
+  CLKOK Divider:                                    36
+  CLKOS Phase Shift (degree):                       0.0
+  CLKOS Duty Cycle (*1/16):                         8
+  Phase_Duty Control:                               STATIC
+  FB_MODE:                                          NONE
+PLL 2:                                     Pin/Node Value
+  PLL Instance Name:                                digital_fm_radio/U2/pll_25M_
+       50M_8M33/PLLInst_0
+  PLL Type:                                         EPLLD
+  Input Clock:                             PIN      clk_25m_c
+  Output Clock(P):                         NODE     digital_fm_radio/U2/clk_50M
+  Output Clock(S):                                  NONE
+  Output Clock(K):                         NODE
+       digital_fm_radio/sample_cntrgen[3]
+  PLL Feedback Signal:                     NODE     digital_fm_radio/U2/clk_50M
+  PLL Reset Signal:                                 NONE
+  PLL K Divider Reset Signal:                       NONE
+  PLL LOCK Signal:                                  NONE
+  Dynamic Phase Adjust Input 0:                     NONE
+  Dynamic Phase Adjust Input 1:                     NONE
+  Dynamic Phase Adjust Input 2:                     NONE
+  Dynamic Phase Adjust Input 3:                     NONE
+  Dynamic Duty Adjust Input 0:                      NONE
+  Dynamic Duty Adjust Input 1:                      NONE
+  Dynamic Duty Adjust Input 2:                      NONE
+  Dynamic Duty Adjust Input 3:                      NONE
+  Input Clock Frequency (MHz):                      25.0000
+  Output Clock(P) Frequency (MHz):                  50.0000
+
+                                   Page 21
+
+
+
+
+Design:  ulx2s_fm_radio                                Date:  01/22/16  00:15:28
+
+PLL/DLL Summary (cont)
+----------------------
+  Output Clock(K) Frequency (MHz):                   8.3333
+  Output Clock(P) Actual Frequency:                 50.0000
+  CLKOP BYPASS:                                     DISABLED
+  CLKOS BYPASS:                                     DISABLED
+  CLKOK BYPASS:                                     DISABLED
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    2
+  CLKOP Divider:                                    16
+  CLKOK Divider:                                    6
+  CLKOS Phase Shift (degree):                       0.0
+  CLKOS Duty Cycle (*1/16):                         8
+  Phase_Duty Control:                               STATIC
+  FB_MODE:                                          NONE
+
+ASIC Components
+---------------
+
+Instance Name: digital_fm_radio/U3/I2/dout_5_0_0
+         Type: PDPW16KB
+Instance Name: digital_fm_radio/U3/I2/dout_2_0_0
+         Type: PDPW16KB
+Instance Name: digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0
+         Type: EPLLD
+Instance Name: digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0
+         Type: EPLLD
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'btn_center_c' of the design has been inferred as
+        Global Set Reset (GSR). The reset signal used for GSR control is
+        'btn_center_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 2 secs  
+   Total REAL Time: 3 secs  
+   Peak Memory Usage: 77 MB
+        
+
+
+
+
+
+
+
+
+
+                                   Page 22
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights
+     reserved.

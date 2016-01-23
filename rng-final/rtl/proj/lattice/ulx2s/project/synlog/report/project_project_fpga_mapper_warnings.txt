@@ -1,0 +1,23 @@
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[3],  because it is equivalent to instance digital_fm_radio.FIR1.d0[2]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[2],  because it is equivalent to instance digital_fm_radio.FIR1.d0[1]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[1],  because it is equivalent to instance digital_fm_radio.FIR1.d0[0]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[7],  because it is equivalent to instance digital_fm_radio.FIR1.d0[0]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[6],  because it is equivalent to instance digital_fm_radio.FIR1.d0[5]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[5],  because it is equivalent to instance digital_fm_radio.FIR1.d0[4]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[7],  because it is equivalent to instance digital_fm_radio.FIR0.d0[3]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[3],  because it is equivalent to instance digital_fm_radio.FIR0.d0[2]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[2],  because it is equivalent to instance digital_fm_radio.FIR0.d0[1]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[1],  because it is equivalent to instance digital_fm_radio.FIR0.d0[0]
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[3] reduced to a combinational gate by constant propagation
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|long_timer_derived_clock[19]. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]. Clock will not be forward annotated
+@W: MT246 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_50m_360m_10m.vhd":85:4:85:12|Blackbox EPLLD1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock ulx2s_fm_radio|clk_25m with period 1000.00ns. Please declare a user-defined clock on object "p:clk_25m"
+@W: MT420 |Found inferred clock ulx2s_fm_radio|btn_up with period 1000.00ns. Please declare a user-defined clock on object "p:btn_up"
+@W: MT420 |Found inferred clock lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_50M_360M_10M.CLKOK"
+@W: MT420 |Found inferred clock lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_50M_360M_10M.CLKOP"
+@W: MT420 |Found inferred clock lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_25M_50M_8M33.CLKOK"

@@ -1,0 +1,2 @@
+@E: CD326 :"C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\Simple_FIR_8bit.vhd":74:12:74:24|Port btn_down of entity work.reg_file is unconnected
+

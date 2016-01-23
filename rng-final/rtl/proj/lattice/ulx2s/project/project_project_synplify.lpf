@@ -1,0 +1,45 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1176R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz" 1.0 MHz;
+#FREQUENCY NET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz" 1.0 MHz;
+#FREQUENCY PORT "btn_up" 1.0 MHz;
+#FREQUENCY PORT "clk_25m" 1.0 MHz;
+#FREQUENCY NET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz" 1.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz" TO CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz" TO CLKNET "btn_up_c";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz" TO CLKNET "clk_25m_c";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz" TO CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz" TO CLKNET "btn_up_c";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz" TO CLKNET "clk_25m_c";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz" TO CLKNET "btn_up_c";
+#BLOCK PATH FROM CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz" TO CLKNET "clk_25m_c";
+#BLOCK PATH FROM CLKNET "btn_up_c" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz";
+#BLOCK PATH FROM CLKNET "btn_up_c" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz";
+#BLOCK PATH FROM CLKNET "btn_up_c" TO CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz";
+#BLOCK PATH FROM CLKNET "btn_up_c" TO CLKNET "clk_25m_c";
+#BLOCK PATH FROM CLKNET "clk_25m_c" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_10MHz";
+#BLOCK PATH FROM CLKNET "clk_25m_c" TO CLKNET "digital_fm_radio/U2/pll_50M_360M_10M/clk_360MHz";
+#BLOCK PATH FROM CLKNET "clk_25m_c" TO CLKNET "digital_fm_radio/U2/pll_25M_50M_8M33/clk_8MHz";
+#BLOCK PATH FROM CLKNET "clk_25m_c" TO CLKNET "btn_up_c";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

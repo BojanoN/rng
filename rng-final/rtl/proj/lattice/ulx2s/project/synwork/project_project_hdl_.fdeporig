@@ -1,0 +1,102 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|ulx2s_fm_radio|-prodtype|synplify_pro|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\proj\\lattice\\ulx2s\\project\\syntmp\\hdlorder.tcl"
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\bin64\\c_vhdl.exe":1429540330
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\location.map":1429697770
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\std.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\std1164.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\numeric.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\arith.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1429539914
+#CUR:"C:\\lscc\\diamond\\3.5_x64\\cae_library\\synthesis\\vhdl\\xp2.vhd":1376992808
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\lattice\\ulx2s_toplevel.vhd":1453416413
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\lattice\\lfxp2_rf_pll.vhd":1453379776
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\lattice\\lfxp2_pll_25M_50M_8M33.vhd":1453379774
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\lattice\\lfxp2_pll_50M_360M_10M.vhd":1453379776
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\FleaFPGA_FM_Radio.vhd":1453418104
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\Simple_FIR_8bit.vhd":1453414092
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\simple_PWM.vhd":1453379772
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\FMPLL_Loop_filter.vhd":1453379764
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\FMPLL_NCO.vhd":1453379766
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\FMPLL_phase_detector.vhd":1453379766
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\FMPLL_top.vhd":1453414421
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\generic\\Simple_FIR.vhd":1453379768
+#CUR:"C:\\Users\\Bojan\\Documents\\rngfinal\\flearadio-master-final\\rtl\\proj\\lattice\\ulx2s\\FIR8_asinc.vhd":1453379806
+0 "C:\lscc\diamond\3.5_x64\cae_library\synthesis\vhdl\xp2.vhd" vhdl
+1 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd" vhdl
+2 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_rf_pll.vhd" vhdl
+3 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_25M_50M_8M33.vhd" vhdl
+4 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_50M_360M_10M.vhd" vhdl
+5 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd" vhdl
+6 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd" vhdl
+7 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\simple_PWM.vhd" vhdl
+8 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd" vhdl
+9 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd" vhdl
+10 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd" vhdl
+11 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_top.vhd" vhdl
+12 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd" vhdl
+13 "C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 5 
+2 3 4 
+3 0 
+4 0 
+5 2 6 13 11 12 7 
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 10 12 8 9 
+12 -1
+13 -1
+
+# Dependency Lists (Users Of)
+0 4 3 
+1 -1
+2 5 
+3 2 
+4 2 
+5 1 
+6 5 
+7 5 
+8 11 
+9 11 
+10 11 
+11 5 
+12 11 5 
+13 5 
+
+# Design Unit to File Association
+arch work ulx2s_fm_radio arch 1
+module work ulx2s_fm_radio 1
+arch work rf_pll x 2
+module work rf_pll 2
+config work structure_con 3
+arch work lfxp2_pll_25m_50m_8m33 structure 3
+module work lfxp2_pll_25m_50m_8m33 3
+config work structure_con 4
+arch work lfxp2_pll_50m_360m_10m structure 4
+module work lfxp2_pll_50m_360m_10m 4
+arch work fleafpga_fm_radio behavior 5
+module work fleafpga_fm_radio 5
+arch work fir8 behavior 6
+module work fir8 6
+arch work simple_pwm behavior 7
+module work simple_pwm 7
+arch work loop_filter behavior 8
+module work loop_filter 8
+arch work nco behavior 9
+module work nco 9
+arch work multiplier behavior 10
+module work multiplier 10
+arch work circuit behavior 11
+module work circuit 11
+arch work fir behavior 12
+module work fir 12
+arch work fir8_asinc behavior 13
+module work fir8_asinc 13

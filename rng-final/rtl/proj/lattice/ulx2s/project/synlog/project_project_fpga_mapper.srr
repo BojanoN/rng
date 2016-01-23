@@ -1,0 +1,898 @@
+Synopsys Lattice Technology Mapper, Version maplat, Build 1176R, Built Apr 20 2015 17:38:44
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03L
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 143MB)
+
+@N:"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":246:18:246:18|Found counter in view:work.FleaFPGA_FM_Radio(behavior) inst n[30:23]
+@N: FX404 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":220:12:220:13|Found addmux in view:work.FleaFPGA_FM_Radio(behavior) inst K_mod_control_6[31:0] from un1_K_mod_control[31:0] 
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[3],  because it is equivalent to instance digital_fm_radio.FIR1.d0[2]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[2],  because it is equivalent to instance digital_fm_radio.FIR1.d0[1]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[1],  because it is equivalent to instance digital_fm_radio.FIR1.d0[0]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[7],  because it is equivalent to instance digital_fm_radio.FIR1.d0[0]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[6],  because it is equivalent to instance digital_fm_radio.FIR1.d0[5]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR1.d0[5],  because it is equivalent to instance digital_fm_radio.FIR1.d0[4]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[7],  because it is equivalent to instance digital_fm_radio.FIR0.d0[3]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[3],  because it is equivalent to instance digital_fm_radio.FIR0.d0[2]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[2],  because it is equivalent to instance digital_fm_radio.FIR0.d0[1]
+@W: BN132 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Removing instance digital_fm_radio.FIR0.d0[1],  because it is equivalent to instance digital_fm_radio.FIR0.d0[0]
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[0] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[1] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[2] reduced to a combinational gate by constant propagation
+@W: MO129 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Sequential instance digital_fm_radio.U3.I2.din_buf[3] reduced to a combinational gate by constant propagation
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":68:10:68:62|Pipelining module un28_sum[11:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register sum[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d4[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d3[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d2[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d15[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d14[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d1[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d13[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d12[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d11[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d10[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d9[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d8[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d7[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d6[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Register d5[7:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":68:10:68:62|Pipelining module un28_sum[11:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register sum[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d4[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d3[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d2[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d15[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d14[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d1[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d13[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d12[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d11[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d10[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d9[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d8[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d7[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d6[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Register d5[7:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":235:26:235:39|Pipelining module un3_long_timer[19:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":230:4:230:5|Register long_timer[19:0] pushed in.
+@N: FA113 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":60:10:60:62|Pipelining module un28_sum[15:0]
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register sum[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d6[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d5[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d7[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d4[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d8[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d3[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d9[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d2[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d10[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d1[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d11[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d0[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d12[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register data_out[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d13[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d14[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir.vhd":24:1:24:2|Register d15[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_loop_filter.vhd":29:2:29:3|Register D1[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_loop_filter.vhd":29:2:29:3|Register dtemp[11:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_nco.vhd":289:0:289:1|Register dtemp[17:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register output[7:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register out_temp[15:8] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register part7[8:0] pushed in.
+@N: MF169 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fmpll_phase_detector.vhd":35:2:35:3|Register part6[8:0] pushed in.
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 157MB peak: 158MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 158MB peak: 158MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 157MB peak: 158MB)
+
+@N: FX211 |Packed ROM digital_fm_radio.U3.I2.dout_5_0[13:0] (9 input, 14 output) to Block SelectRAM 
+@N: FX211 |Packed ROM digital_fm_radio.U3.I2.dout_2_0[6:0] (9 input, 7 output) to Block SelectRAM 
+@N: BN362 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Removing sequential instance digital_fm_radio.K_mod_control[0] in hierarchy view:work.ulx2s_fm_radio(arch) because there are no references to its outputs 
+@A: BN291 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Boundary register digital_fm_radio.K_mod_control[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 158MB peak: 159MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 159MB peak: 162MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:03s		   989.79ns		 824 /       953
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR0.d0[4]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\simple_fir_8bit.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR0.d0[0]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR1.d0[4]" 
+@N: FX1019 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\fir8_asinc.vhd":32:1:32:2|Adding ASYNC_REG property on synchronizing instance "digital_fm_radio.FIR1.d0[0]" 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 159MB peak: 162MB)
+
+@N: BN362 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Removing sequential instance digital_fm_radio.K_mod_control[1] in hierarchy view:work.ulx2s_fm_radio(arch) because there are no references to its outputs 
+@A: BN291 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\generic\fleafpga_fm_radio.vhd":210:4:210:5|Boundary register digital_fm_radio.K_mod_control[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 159MB peak: 162MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+2 non-gated/non-generated clock tree(s) driving 62 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 891 clock pin(s) of sequential element(s)
+0 instances converted, 891 sequential instances remain driven by gated/generated clocks
+
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@K:CKID0004       clk_25m             port                   54         digital_fm_radio.PWM0.pwm_acc[11]
+@K:CKID0005       btn_up              port                   8          digital_fm_radio_ledio[0]        
+=========================================================================================================
+=========================================================================================================================== Gated/Generated Clocks ============================================================================================================================
+Clock Tree ID     Driving Element                                    Drive Element Type     Fanout     Sample Instance                           Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       digital_fm_radio.U2.pll_25M_50M_8M33.PLLInst_0     EPLLD1                 816        digital_fm_radio.RESET_GEN.PLL_RESET      Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     EPLLD1                 42         digital_fm_radio.FIR0.d0[4]               No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+@K:CKID0003       digital_fm_radio.U2.pll_50M_360M_10M.PLLInst_0     EPLLD1                 33         digital_fm_radio.phase_accumulator[1]     No gated clock conversion method for cell cell:LUCENT.FD1S3DX                                                                 
+===============================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 119MB peak: 162MB)
+
+Writing Analyst data base C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synwork\project_project_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 153MB peak: 162MB)
+
+Writing EDIF Netlist and constraint files
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|long_timer_derived_clock[19]. Clock will not be forward annotated
+@W: MT558 :|Unable to locate source for clock FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]. Clock will not be forward annotated
+J-2015.03L
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 157MB peak: 162MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 156MB peak: 162MB)
+
+@W: MT246 :"c:\users\bojan\documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_pll_50m_360m_10m.vhd":85:4:85:12|Blackbox EPLLD1 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock ulx2s_fm_radio|clk_25m with period 1000.00ns. Please declare a user-defined clock on object "p:clk_25m"
+
+@W: MT420 |Found inferred clock ulx2s_fm_radio|btn_up with period 1000.00ns. Please declare a user-defined clock on object "p:btn_up"
+
+@W: MT420 |Found inferred clock lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_50M_360M_10M.CLKOK"
+
+@W: MT420 |Found inferred clock lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_50M_360M_10M.CLKOP"
+
+@W: MT420 |Found inferred clock lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:digital_fm_radio.U2.pll_25M_50M_8M33.CLKOK"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Jan 22 00:15:25 2016
+#
+
+
+Top view:               ulx2s_fm_radio
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 989.217
+
+@N: MT286 |System clock period 0.000 stretches to negative invalid value -- ignoring stretching.
+                                                          Requested     Estimated     Requested     Estimated                 Clock                                                          Clock              
+Starting Clock                                            Frequency     Frequency     Period        Period        Slack       Type                                                           Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FleaFPGA_FM_Radio|long_timer_derived_clock[19]            1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]     1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock)     Inferred_clkgroup_0
+FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]            1.0 MHz       NA            1000.000      NA            NA          derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock               1.0 MHz       131.8 MHz     1000.000      7.589         992.411     inferred                                                       Inferred_clkgroup_1
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock               1.0 MHz       92.7 MHz      1000.000      10.783        989.217     inferred                                                       Inferred_clkgroup_4
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock               1.0 MHz       183.8 MHz     1000.000      5.440         994.560     inferred                                                       Inferred_clkgroup_0
+ulx2s_fm_radio|btn_up                                     1.0 MHz       NA            1000.000      NA            NA          inferred                                                       Inferred_clkgroup_2
+ulx2s_fm_radio|clk_25m                                    1.0 MHz       92.7 MHz      1000.000      10.783        989.217     inferred                                                       Inferred_clkgroup_3
+System                                                    1.0 MHz       216.8 MHz     1000.000      4.614         995.386     system                                                         system_clkgroup    
+================================================================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                    |    rise  to  rise      |    fall  to  fall     |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                     Ending                                       |  constraint  slack     |  constraint  slack    |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                       System                                       |  1000.000    1000.000  |  No paths    -        |  No paths    -      |  No paths    -    
+System                                       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  1000.000    995.386   |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  |  1000.000    994.560   |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  ulx2s_fm_radio|clk_25m                       |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  System                                       |  1000.000    996.424   |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock  |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  1000.000    992.411   |  1000.000    996.536  |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  ulx2s_fm_radio|btn_up                        |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  ulx2s_fm_radio|clk_25m                       |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+ulx2s_fm_radio|clk_25m                       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+ulx2s_fm_radio|clk_25m                       ulx2s_fm_radio|clk_25m                       |  1000.000    989.217   |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock  |  Diff grp    -         |  No paths    -        |  No paths    -      |  No paths    -    
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock  |  1000.000    989.217   |  No paths    -        |  No paths    -      |  No paths    -    
+=====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                                 Arrival            
+Instance                                Reference                                       Type        Pin     Net                  Time        Slack  
+                                        Clock                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR2.sum_pipe_46       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_8_0         0.929       992.411
+digital_fm_radio.FIR2.sum_pipe_59       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_8_4f[0]     0.929       992.411
+digital_fm_radio.U3.I4.sum_pipe_89      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       un28_sum_14f[1]      0.994       992.484
+digital_fm_radio.FIR2.sum_pipe_89       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_14f[1]      0.994       992.484
+digital_fm_radio.U3.I4.sum_pipe_90      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       un28_sum_14f[2]      0.994       992.484
+digital_fm_radio.FIR2.sum_pipe_90       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_14f[2]      0.994       992.484
+digital_fm_radio.FIR2.sum_pipe_103      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_12f[1]      0.994       992.484
+digital_fm_radio.U3.I4.sum_pipe_103     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       un28_sum_12f[1]      0.994       992.484
+digital_fm_radio.U3.I4.sum_pipe_75      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     Q       un28_sum_16f[1]      0.929       992.549
+digital_fm_radio.FIR2.sum_pipe_75       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     Q       un28_sum_16f[1]      0.929       992.549
+====================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                                        Required            
+Instance                                Reference                                       Type        Pin     Net         Time         Slack  
+                                        Clock                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR2.data_out[11]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       sum[11]     1000.069     992.411
+digital_fm_radio.U3.I4.data_out[11]     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sum[11]     1000.069     992.484
+digital_fm_radio.FIR2.data_out[9]       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       sum[9]      1000.069     992.484
+digital_fm_radio.FIR2.data_out[10]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       sum[10]     1000.069     992.484
+digital_fm_radio.U3.I4.data_out[9]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sum[9]      1000.069     992.557
+digital_fm_radio.U3.I4.data_out[10]     lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sum[10]     1000.069     992.557
+digital_fm_radio.FIR2.data_out[7]       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       sum[7]      1000.069     992.557
+digital_fm_radio.FIR2.data_out[8]       lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1P3DX     D       sum[8]      1000.069     992.557
+digital_fm_radio.U3.I4.data_out[7]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sum[7]      1000.069     992.630
+digital_fm_radio.U3.I4.data_out[8]      lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock     FD1S3DX     D       sum[8]      1000.069     992.630
+============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.069
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.069
+
+    - Propagation time:                      7.658
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 992.411
+
+    Number of logic level(s):                11
+    Starting point:                          digital_fm_radio.FIR2.sum_pipe_46 / Q
+    Ending point:                            digital_fm_radio.FIR2.data_out[11] / D
+    The start point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR2.sum_pipe_46             FD1P3DX      Q        Out     0.929     0.929       -         
+un28_sum_8_0                                  Net          -        -       -         -           2         
+digital_fm_radio.FIR2.un28_sum_8_cry_0_0      CCU2B        A1       In      0.000     0.929       -         
+digital_fm_radio.FIR2.un28_sum_8_cry_0_0      CCU2B        COUT     Out     1.056     1.985       -         
+un28_sum_8_cry_0                              Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_8_cry_1_0      CCU2B        CIN      In      0.000     1.985       -         
+digital_fm_radio.FIR2.un28_sum_8_cry_1_0      CCU2B        S0       Out     1.372     3.357       -         
+un28_sum_8[1]                                 Net          -        -       -         -           3         
+digital_fm_radio.FIR2.un28_sum_5              ORCALUT4     D        In      0.000     3.357       -         
+digital_fm_radio.FIR2.un28_sum_5              ORCALUT4     Z        Out     0.892     4.249       -         
+un28_sum_5_0                                  Net          -        -       -         -           3         
+digital_fm_radio.FIR2.un28_sum_10             ORCALUT4     A        In      0.000     4.249       -         
+digital_fm_radio.FIR2.un28_sum_10             ORCALUT4     Z        Out     0.754     5.003       -         
+un28_sum_4                                    Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_3_0      CCU2B        A1       In      0.000     5.003       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_3_0      CCU2B        COUT     Out     1.056     6.059       -         
+un28_sum_0_cry_4                              Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_5_0      CCU2B        CIN      In      0.000     6.059       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_5_0      CCU2B        COUT     Out     0.073     6.132       -         
+un28_sum_0_cry_6                              Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_7_0      CCU2B        CIN      In      0.000     6.132       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_7_0      CCU2B        COUT     Out     0.073     6.205       -         
+un28_sum_0_cry_8                              Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_9_0      CCU2B        CIN      In      0.000     6.205       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_9_0      CCU2B        COUT     Out     0.073     6.278       -         
+un28_sum_0_cry_10                             Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_11_0     CCU2B        CIN      In      0.000     6.278       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_11_0     CCU2B        COUT     Out     0.073     6.351       -         
+un28_sum_0_cry_12                             Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_cry_13_0     CCU2B        CIN      In      0.000     6.351       -         
+digital_fm_radio.FIR2.un28_sum_0_cry_13_0     CCU2B        COUT     Out     0.073     6.424       -         
+un28_sum_0_cry_14                             Net          -        -       -         -           1         
+digital_fm_radio.FIR2.un28_sum_0_s_15_0       CCU2B        CIN      In      0.000     6.424       -         
+digital_fm_radio.FIR2.un28_sum_0_s_15_0       CCU2B        S0       Out     1.234     7.658       -         
+sum[11]                                       Net          -        -       -         -           1         
+digital_fm_radio.FIR2.data_out[11]            FD1P3DX      D        In      0.000     7.658       -         
+============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                                                        Arrival            
+Instance                             Reference                                       Type        Pin     Net         Time        Slack  
+                                     Clock                                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.d11[0]         lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d11[3]      1.120       989.217
+digital_fm_radio.FIR0.d14[0]         lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d14[3]      1.120       989.217
+digital_fm_radio.FIR0.d2[0]          lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d2[3]       1.075       989.230
+digital_fm_radio.FIR0.d12[0]         lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d12[3]      1.075       989.230
+digital_fm_radio.FIR0.d1[0]          lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d1[3]       1.067       989.238
+digital_fm_radio.FIR0.d13[0]         lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d13[3]      1.067       989.238
+digital_fm_radio.FIR0.d15[0]         lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d15[3]      1.120       989.282
+digital_fm_radio.FIR0.d3[0]          lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d3[3]       1.067       989.303
+digital_fm_radio.FIR0.sum_pipe_6     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d15f[3]     1.067       989.303
+digital_fm_radio.FIR0.d2[4]          lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     Q       d2[6]       1.035       989.416
+========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                                       Required            
+Instance                              Reference                                       Type        Pin     Net        Time         Slack  
+                                      Clock                                                                                              
+-----------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.data_out[7]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[7]     1000.069     989.217
+digital_fm_radio.FIR0.data_out[5]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[5]     1000.069     989.290
+digital_fm_radio.FIR0.data_out[6]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[6]     1000.069     989.290
+digital_fm_radio.FIR0.data_out[3]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[3]     1000.069     989.363
+digital_fm_radio.FIR0.data_out[4]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[4]     1000.069     989.363
+digital_fm_radio.FIR0.data_out[1]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[1]     1000.069     990.794
+digital_fm_radio.FIR0.data_out[2]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[2]     1000.069     990.794
+digital_fm_radio.FIR0.data_out[0]     lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       sum[0]     1000.069     992.534
+digital_fm_radio.FIR0.d7[0]           lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d6[3]      999.908      998.776
+digital_fm_radio.FIR0.d8[0]           lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock     FD1S3DX     D       d7[3]      999.908      998.776
+=========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.069
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.069
+
+    - Propagation time:                      10.851
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     989.217
+
+    Number of logic level(s):                11
+    Starting point:                          digital_fm_radio.FIR0.d11[0] / Q
+    Ending point:                            digital_fm_radio.FIR0.data_out[7] / D
+    The start point is clocked by            lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR0.d11[0]                    FD1S3DX      Q        Out     1.120     1.120       -         
+d11[3]                                          Net          -        -       -         -           10        
+digital_fm_radio.FIR0.un28_sum_12_4_0           ORCALUT4     A        In      0.000     1.120       -         
+digital_fm_radio.FIR0.un28_sum_12_4_0           ORCALUT4     Z        Out     0.933     2.052       -         
+un28_sum_12_9_0                                 Net          -        -       -         -           4         
+digital_fm_radio.FIR0.un28_sum_12_0_cry_1_0     CCU2B        B1       In      0.000     2.052       -         
+digital_fm_radio.FIR0.un28_sum_12_0_cry_1_0     CCU2B        COUT     Out     1.056     3.108       -         
+un28_sum_12_0_cry_2                             Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_12_0_cry_3_0     CCU2B        CIN      In      0.000     3.108       -         
+digital_fm_radio.FIR0.un28_sum_12_0_cry_3_0     CCU2B        S0       Out     1.372     4.480       -         
+un28_sum_12[3]                                  Net          -        -       -         -           3         
+digital_fm_radio.FIR0.un28_sum_6_12             ORCALUT4     A        In      0.000     4.480       -         
+digital_fm_radio.FIR0.un28_sum_6_12             ORCALUT4     Z        Out     0.754     5.234       -         
+un28_sum_6_7                                    Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_6_0_cry_3_0      CCU2B        A1       In      0.000     5.234       -         
+digital_fm_radio.FIR0.un28_sum_6_0_cry_3_0      CCU2B        COUT     Out     1.056     6.290       -         
+un28_sum_6_0_cry_4                              Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_6_0_cry_5_0      CCU2B        CIN      In      0.000     6.290       -         
+digital_fm_radio.FIR0.un28_sum_6_0_cry_5_0      CCU2B        S0       Out     1.372     7.661       -         
+un28_sum_6[5]                                   Net          -        -       -         -           3         
+digital_fm_radio.FIR0.un28_sum_20               ORCALUT4     A        In      0.000     7.661       -         
+digital_fm_radio.FIR0.un28_sum_20               ORCALUT4     Z        Out     0.754     8.416       -         
+un28_sum_11_0                                   Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_0_cry_5_0        CCU2B        A1       In      0.000     8.416       -         
+digital_fm_radio.FIR0.un28_sum_0_cry_5_0        CCU2B        COUT     Out     1.056     9.471       -         
+un28_sum_0_cry_6                                Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_0_cry_7_0        CCU2B        CIN      In      0.000     9.471       -         
+digital_fm_radio.FIR0.un28_sum_0_cry_7_0        CCU2B        COUT     Out     0.073     9.544       -         
+un28_sum_0_cry_8                                Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_0_cry_9_0        CCU2B        CIN      In      0.000     9.544       -         
+digital_fm_radio.FIR0.un28_sum_0_cry_9_0        CCU2B        COUT     Out     0.073     9.617       -         
+un28_sum_0_cry_10                               Net          -        -       -         -           1         
+digital_fm_radio.FIR0.un28_sum_0_s_11_0         CCU2B        CIN      In      0.000     9.617       -         
+digital_fm_radio.FIR0.un28_sum_0_s_11_0         CCU2B        S0       Out     1.234     10.851      -         
+sum[7]                                          Net          -        -       -         -           1         
+digital_fm_radio.FIR0.data_out[7]               FD1S3DX      D        In      0.000     10.851      -         
+==============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                           Starting                                                                                      Arrival            
+Instance                                   Reference                                       Type        Pin     Net                       Time        Slack  
+                                           Clock                                                                                                            
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.phase_accumulator[1]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[1]      0.929       994.560
+digital_fm_radio.phase_accumulator[2]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[2]      0.929       994.560
+digital_fm_radio.phase_accumulator[3]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[3]      0.929       994.633
+digital_fm_radio.phase_accumulator[4]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[4]      0.929       994.633
+digital_fm_radio.phase_accumulator[5]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[5]      0.929       994.706
+digital_fm_radio.phase_accumulator[6]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[6]      0.929       994.706
+digital_fm_radio.phase_accumulator[7]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[7]      0.929       994.779
+digital_fm_radio.phase_accumulator[8]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[8]      0.929       994.779
+digital_fm_radio.phase_accumulator[9]      lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[9]      0.929       994.852
+digital_fm_radio.phase_accumulator[10]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX     Q       phase_accumulator[10]     0.929       994.852
+============================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                           Starting                                                                                                        Required            
+Instance                                   Reference                                       Type         Pin     Net                                        Time         Slack  
+                                           Clock                                                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio_input_sample3io[4]        lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     IFS1P3DX     SP      un1_phase_accumulator_0_s_31_0_RNIQ0HH     999.701      994.560
+digital_fm_radio.input_sample3[0]          lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1P3DX      SP      un1_phase_accumulator_0_s_31_0_RNIQ0HH     999.701      994.560
+digital_fm_radio.phase_accumulator[31]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_0_s_31_0_S0          999.908      995.594
+digital_fm_radio.phase_accumulator[29]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_29_0_S0          1000.069     995.901
+digital_fm_radio.phase_accumulator[30]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_29_0_S1          1000.069     995.901
+digital_fm_radio.phase_accumulator[27]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_27_0_S0          1000.069     995.974
+digital_fm_radio.phase_accumulator[28]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_27_0_S1          1000.069     995.974
+digital_fm_radio.phase_accumulator[25]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_25_0_S0          1000.069     996.047
+digital_fm_radio.phase_accumulator[26]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_25_0_S1          1000.069     996.047
+digital_fm_radio.phase_accumulator[23]     lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock     FD1S3DX      D       un1_phase_accumulator_cry_23_0_S0          1000.069     996.120
+===============================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.299
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.701
+
+    - Propagation time:                      5.141
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 994.560
+
+    Number of logic level(s):                17
+    Starting point:                          digital_fm_radio.phase_accumulator[1] / Q
+    Ending point:                            digital_fm_radio_input_sample3io[4] / SP
+    The start point is clocked by            lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock [rising] on pin SCLK
+
+Instance / Net                                                           Pin      Pin               Arrival     No. of    
+Name                                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.phase_accumulator[1]                       FD1S3DX      Q        Out     0.929     0.929       -         
+phase_accumulator[1]                                        Net          -        -       -         -           2         
+digital_fm_radio.un1_phase_accumulator_0_cry_1_0            CCU2B        A0       In      0.000     0.929       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_1_0            CCU2B        COUT     Out     1.056     1.985       -         
+un1_phase_accumulator_0_cry_2                               Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_3_0            CCU2B        CIN      In      0.000     1.985       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_3_0            CCU2B        COUT     Out     0.073     2.058       -         
+un1_phase_accumulator_0_cry_4                               Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_5_0            CCU2B        CIN      In      0.000     2.058       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_5_0            CCU2B        COUT     Out     0.073     2.131       -         
+un1_phase_accumulator_0_cry_6                               Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_7_0            CCU2B        CIN      In      0.000     2.131       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_7_0            CCU2B        COUT     Out     0.073     2.204       -         
+un1_phase_accumulator_0_cry_8                               Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_9_0            CCU2B        CIN      In      0.000     2.204       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_9_0            CCU2B        COUT     Out     0.073     2.277       -         
+un1_phase_accumulator_0_cry_10                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_11_0           CCU2B        CIN      In      0.000     2.277       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_11_0           CCU2B        COUT     Out     0.073     2.350       -         
+un1_phase_accumulator_0_cry_12                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_13_0           CCU2B        CIN      In      0.000     2.350       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_13_0           CCU2B        COUT     Out     0.073     2.423       -         
+un1_phase_accumulator_0_cry_14                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_15_0           CCU2B        CIN      In      0.000     2.423       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_15_0           CCU2B        COUT     Out     0.073     2.496       -         
+un1_phase_accumulator_0_cry_16                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_17_0           CCU2B        CIN      In      0.000     2.496       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_17_0           CCU2B        COUT     Out     0.073     2.569       -         
+un1_phase_accumulator_0_cry_18                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_19_0           CCU2B        CIN      In      0.000     2.569       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_19_0           CCU2B        COUT     Out     0.073     2.642       -         
+un1_phase_accumulator_0_cry_20                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_21_0           CCU2B        CIN      In      0.000     2.642       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_21_0           CCU2B        COUT     Out     0.073     2.715       -         
+un1_phase_accumulator_0_cry_22                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_23_0           CCU2B        CIN      In      0.000     2.715       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_23_0           CCU2B        COUT     Out     0.073     2.788       -         
+un1_phase_accumulator_0_cry_24                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_25_0           CCU2B        CIN      In      0.000     2.788       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_25_0           CCU2B        COUT     Out     0.073     2.861       -         
+un1_phase_accumulator_0_cry_26                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_27_0           CCU2B        CIN      In      0.000     2.861       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_27_0           CCU2B        COUT     Out     0.073     2.934       -         
+un1_phase_accumulator_0_cry_28                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_cry_29_0           CCU2B        CIN      In      0.000     2.934       -         
+digital_fm_radio.un1_phase_accumulator_0_cry_29_0           CCU2B        COUT     Out     0.073     3.007       -         
+un1_phase_accumulator_0_cry_30                              Net          -        -       -         -           1         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0             CCU2B        CIN      In      0.000     3.007       -         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0             CCU2B        S0       Out     1.307     4.314       -         
+un1_phase_accumulator_0_s_31_0_S0                           Net          -        -       -         -           2         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0_RNIQ0HH     ORCALUT4     B        In      0.000     4.314       -         
+digital_fm_radio.un1_phase_accumulator_0_s_31_0_RNIQ0HH     ORCALUT4     Z        Out     0.827     5.141       -         
+un1_phase_accumulator_0_s_31_0_RNIQ0HH                      Net          -        -       -         -           2         
+digital_fm_radio_input_sample3io[4]                         IFS1P3DX     SP       In      0.000     5.141       -         
+==========================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: ulx2s_fm_radio|clk_25m
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                                   Arrival            
+Instance                             Reference                  Type        Pin     Net         Time        Slack  
+                                     Clock                                                                         
+-------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.d11[0]         ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d11[3]      1.120       989.217
+digital_fm_radio.FIR1.d14[0]         ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d14[3]      1.120       989.217
+digital_fm_radio.FIR1.d2[0]          ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d2[3]       1.075       989.230
+digital_fm_radio.FIR1.d12[0]         ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d12[3]      1.075       989.230
+digital_fm_radio.FIR1.d1[0]          ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d1[3]       1.067       989.238
+digital_fm_radio.FIR1.d13[0]         ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d13[3]      1.067       989.238
+digital_fm_radio.FIR1.d15[0]         ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d15[3]      1.120       989.282
+digital_fm_radio.FIR1.d3[0]          ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d3[3]       1.067       989.303
+digital_fm_radio.FIR1.sum_pipe_6     ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d15f[3]     1.067       989.303
+digital_fm_radio.FIR1.d2[4]          ulx2s_fm_radio|clk_25m     FD1S3DX     Q       d2[6]       1.035       989.416
+===================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                                   Required            
+Instance                              Reference                  Type        Pin     Net                         Time         Slack  
+                                      Clock                                                                                          
+-------------------------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.data_out[7]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[7]                      1000.069     989.217
+digital_fm_radio.FIR1.data_out[5]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[5]                      1000.069     989.290
+digital_fm_radio.FIR1.data_out[6]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[6]                      1000.069     989.290
+digital_fm_radio.FIR1.data_out[3]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[3]                      1000.069     989.363
+digital_fm_radio.FIR1.data_out[4]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[4]                      1000.069     989.363
+digital_fm_radio.FIR1.data_out[1]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[1]                      1000.069     990.794
+digital_fm_radio.FIR1.data_out[2]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[2]                      1000.069     990.794
+digital_fm_radio.FIR1.data_out[0]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       sum[0]                      1000.069     992.481
+digital_fm_radio.PWM0.pwm_acc[11]     ulx2s_fm_radio|clk_25m     FD1S3DX     D       un10_pwm_acc_s_11_0_S0      1000.069     996.339
+digital_fm_radio.PWM0.pwm_acc[9]      ulx2s_fm_radio|clk_25m     FD1S3DX     D       un10_pwm_acc_cry_9_0_S0     1000.069     996.412
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.069
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.069
+
+    - Propagation time:                      10.851
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     989.217
+
+    Number of logic level(s):                11
+    Starting point:                          digital_fm_radio.FIR1.d11[0] / Q
+    Ending point:                            digital_fm_radio.FIR1.data_out[7] / D
+    The start point is clocked by            ulx2s_fm_radio|clk_25m [rising] on pin CK
+    The end   point is clocked by            ulx2s_fm_radio|clk_25m [rising] on pin CK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+digital_fm_radio.FIR1.d11[0]                    FD1S3DX      Q        Out     1.120     1.120       -         
+d11[3]                                          Net          -        -       -         -           10        
+digital_fm_radio.FIR1.un28_sum_12_13            ORCALUT4     A        In      0.000     1.120       -         
+digital_fm_radio.FIR1.un28_sum_12_13            ORCALUT4     Z        Out     0.933     2.052       -         
+un28_sum_12_2                                   Net          -        -       -         -           4         
+digital_fm_radio.FIR1.un28_sum_12_0_cry_1_0     CCU2B        A1       In      0.000     2.052       -         
+digital_fm_radio.FIR1.un28_sum_12_0_cry_1_0     CCU2B        COUT     Out     1.056     3.108       -         
+un28_sum_12_0_cry_2                             Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_12_0_cry_3_0     CCU2B        CIN      In      0.000     3.108       -         
+digital_fm_radio.FIR1.un28_sum_12_0_cry_3_0     CCU2B        S0       Out     1.372     4.480       -         
+un28_sum_12[3]                                  Net          -        -       -         -           3         
+digital_fm_radio.FIR1.un28_sum_6_13             ORCALUT4     A        In      0.000     4.480       -         
+digital_fm_radio.FIR1.un28_sum_6_13             ORCALUT4     Z        Out     0.754     5.234       -         
+un28_sum_6_8                                    Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_6_0_cry_3_0      CCU2B        A1       In      0.000     5.234       -         
+digital_fm_radio.FIR1.un28_sum_6_0_cry_3_0      CCU2B        COUT     Out     1.056     6.290       -         
+un28_sum_6_0_cry_4                              Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_6_0_cry_5_0      CCU2B        CIN      In      0.000     6.290       -         
+digital_fm_radio.FIR1.un28_sum_6_0_cry_5_0      CCU2B        S0       Out     1.372     7.661       -         
+un28_sum_6[5]                                   Net          -        -       -         -           3         
+digital_fm_radio.FIR1.un28_sum_19               ORCALUT4     A        In      0.000     7.661       -         
+digital_fm_radio.FIR1.un28_sum_19               ORCALUT4     Z        Out     0.754     8.416       -         
+un28_sum_10_0                                   Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_0_cry_5_0        CCU2B        A1       In      0.000     8.416       -         
+digital_fm_radio.FIR1.un28_sum_0_cry_5_0        CCU2B        COUT     Out     1.056     9.471       -         
+un28_sum_0_cry_6                                Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_0_cry_7_0        CCU2B        CIN      In      0.000     9.471       -         
+digital_fm_radio.FIR1.un28_sum_0_cry_7_0        CCU2B        COUT     Out     0.073     9.544       -         
+un28_sum_0_cry_8                                Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_0_cry_9_0        CCU2B        CIN      In      0.000     9.544       -         
+digital_fm_radio.FIR1.un28_sum_0_cry_9_0        CCU2B        COUT     Out     0.073     9.617       -         
+un28_sum_0_cry_10                               Net          -        -       -         -           1         
+digital_fm_radio.FIR1.un28_sum_0_s_11_0         CCU2B        CIN      In      0.000     9.617       -         
+digital_fm_radio.FIR1.un28_sum_0_s_11_0         CCU2B        S0       Out     1.234     10.851      -         
+sum[7]                                          Net          -        -       -         -           1         
+digital_fm_radio.FIR1.data_out[7]               FD1S3DX      D        In      0.000     10.851      -         
+==============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                              Arrival            
+Instance                              Reference     Type         Pin     Net                Time        Slack  
+                                      Clock                                                                    
+---------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO0     N_3420_reto        0.000       995.386
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO0     N_3420_reto        0.000       995.386
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO1     N_3421_reto        0.000       995.532
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO1     N_3421_reto        0.000       995.532
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO2     N_3422_reto        0.000       995.532
+digital_fm_radio.U3.I2.dout_2_0_0     System        PDPW16KB     DO2     N_3422_reto        0.000       995.532
+digital_fm_radio.U3.I2.dout_5_0_0     System        PDPW16KB     DO1     dout_5_0_0_DO1     0.000       995.532
+digital_fm_radio.U3.I2.dout_5_0_0     System        PDPW16KB     DO1     dout_5_0_0_DO1     0.000       995.532
+digital_fm_radio.U3.I2.dout_5_0_0     System        PDPW16KB     DO2     dout_5_0_0_DO2     0.000       995.532
+digital_fm_radio.U3.I2.dout_5_0_0     System        PDPW16KB     DO2     dout_5_0_0_DO2     0.000       995.532
+===============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                         Required            
+Instance                            Reference     Type        Pin     Net            Time         Slack  
+                                    Clock                                                                
+---------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I1.part7[1]     System        FD1S3DX     D       part7_3[1]     999.389      995.386
+digital_fm_radio.U3.I1.part7[2]     System        FD1S3DX     D       part7_3[2]     999.389      995.386
+digital_fm_radio.U3.I1.part7[3]     System        FD1S3DX     D       part7_3[3]     999.389      995.386
+digital_fm_radio.U3.I1.part7[4]     System        FD1S3DX     D       part7_3[4]     999.389      995.386
+digital_fm_radio.U3.I1.part7[5]     System        FD1S3DX     D       part7_3[5]     999.389      995.386
+digital_fm_radio.U3.I1.part7[6]     System        FD1S3DX     D       part7_3[6]     999.389      995.386
+digital_fm_radio.U3.I1.part7[7]     System        FD1S3DX     D       part7_3[7]     999.389      995.386
+digital_fm_radio.U3.I1.part7[8]     System        FD1S3DX     D       part7_3[8]     999.389      995.386
+digital_fm_radio.U3.I1.part5[0]     System        FD1S3DX     D       part5_3[0]     999.389      995.532
+digital_fm_radio.U3.I1.part5[1]     System        FD1S3DX     D       part5_3[1]     999.389      995.532
+=========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.611
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.389
+
+    - Propagation time:                      4.003
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 995.386
+
+    Number of logic level(s):                8
+    Starting point:                          digital_fm_radio.U3.I2.dout_2_0_0 / DO0
+    Ending point:                            digital_fm_radio.U3.I1.part7[1] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock [rising] on pin CK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+digital_fm_radio.U3.I2.dout_2_0_0                     PDPW16KB     DO0      Out     0.000     0.000       -         
+N_3420_reto                                           Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.dout_ret_16ctr                 ORCALUT4     A        In      0.000     0.000       -         
+digital_fm_radio.U3.I2.dout_ret_16ctr                 ORCALUT4     Z        Out     0.827     0.827       -         
+dout_2_i_reto[0]                                      Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_0_0           CCU2B        A1       In      0.000     0.827       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_0_0           CCU2B        COUT     Out     1.056     1.883       -         
+un1_dtemp1_2_cry_0                                    Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_1_0           CCU2B        CIN      In      0.000     1.883       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_1_0           CCU2B        COUT     Out     0.073     1.956       -         
+un1_dtemp1_2_cry_2                                    Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_3_0           CCU2B        CIN      In      0.000     1.956       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_3_0           CCU2B        COUT     Out     0.073     2.029       -         
+un1_dtemp1_2_cry_4                                    Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_5_0           CCU2B        CIN      In      0.000     2.029       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_cry_5_0           CCU2B        COUT     Out     0.073     2.102       -         
+un1_dtemp1_2_cry_6                                    Net          -        -       -         -           1         
+digital_fm_radio.U3.I2.un1_dtemp1_2_s_7_0             CCU2B        CIN      In      0.000     2.102       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_s_7_0             CCU2B        S0       Out     1.307     3.409       -         
+N_2035                                                Net          -        -       -         -           2         
+digital_fm_radio.U3.I2.un1_dtemp1_2_s_7_0_RNI7GHS     ORCALUT4     A        In      0.000     3.409       -         
+digital_fm_radio.U3.I2.un1_dtemp1_2_s_7_0_RNI7GHS     ORCALUT4     Z        Out     0.179     3.588       -         
+dout[7]                                               Net          -        -       -         -           8         
+digital_fm_radio.U3.I1.part7_3_3_0_0[1]               ORCALUT4     D        In      0.000     3.588       -         
+digital_fm_radio.U3.I1.part7_3_3_0_0[1]               ORCALUT4     Z        Out     0.415     4.003       -         
+part7_3[1]                                            Net          -        -       -         -           1         
+digital_fm_radio.U3.I1.part7[1]                       FD1S3DX      D        In      0.000     4.003       -         
+====================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 156MB peak: 162MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 156MB peak: 162MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfxp2_8e-6
+
+Register bits: 951 of 8352 (11%)
+PIC Latch:       0
+I/O cells:       48
+Block Rams : 2 of 12 (16%)
+
+
+Details:
+CCU2B:          414
+FD1P3BX:        12
+FD1P3DX:        308
+FD1S3AX:        8
+FD1S3AY:        1
+FD1S3BX:        5
+FD1S3DX:        608
+GSR:            1
+IB:             6
+IFS1P3DX:       1
+INV:            5
+OB:             42
+OFS1P3DX:       8
+ORCALUT4:       807
+PDPW16KB:       2
+PFUMX:          1
+PUR:            1
+VHI:            10
+VLO:            12
+false:          2
+true:           4
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 58MB peak: 162MB)
+
+Process took 0h:00m:07s realtime, 0h:00m:07s cputime
+# Fri Jan 22 00:15:25 2016
+
+###########################################################]

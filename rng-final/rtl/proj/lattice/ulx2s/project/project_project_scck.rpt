@@ -1,0 +1,36 @@
+# Synopsys Constraint Checker(syntax only), version maplat, Build 1176R, built Apr 20 2015
+# Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Fri Jan 22 00:15:17 2016
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "ulx2s_fm_radio"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+Start                                                     Requested     Requested     Clock                                                          Clock              
+Clock                                                     Frequency     Period        Type                                                           Group              
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+FleaFPGA_FM_Radio|long_timer_derived_clock[19]            1.0 MHz       1000.000      derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31]     1.0 MHz       1000.000      derived (from lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock)     Inferred_clkgroup_0
+FleaFPGA_FM_Radio|sample_cntr_derived_clock[3]            1.0 MHz       1000.000      derived (from lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock)     Inferred_clkgroup_1
+System                                                    1.0 MHz       1000.000      system                                                         system_clkgroup    
+lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock               1.0 MHz       1000.000      inferred                                                       Inferred_clkgroup_1
+lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock               1.0 MHz       1000.000      inferred                                                       Inferred_clkgroup_4
+lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock               1.0 MHz       1000.000      inferred                                                       Inferred_clkgroup_0
+ulx2s_fm_radio|btn_up                                     1.0 MHz       1000.000      inferred                                                       Inferred_clkgroup_2
+ulx2s_fm_radio|clk_25m                                    1.0 MHz       1000.000      inferred                                                       Inferred_clkgroup_3
+========================================================================================================================================================================

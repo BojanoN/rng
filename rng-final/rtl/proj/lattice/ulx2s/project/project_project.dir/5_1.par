@@ -1,0 +1,260 @@
+
+Lattice Place and Route Report for Design "project_project_map.ncd"
+Fri Jan 22 00:15:30 2016
+
+PAR: Place And Route Diamond (64-bit) 3.5.0.102.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF project_project_map.ncd project_project.dir/5_1.ncd project_project.prf
+Preference file: project_project.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file project_project_map.ncd.
+Design name: ulx2s_fm_radio
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFXP2-8E
+Package:     TQFP144
+Performance: 6
+Loading device for application par from file 'mg5a33x38.nph' in environment: C:/lscc/diamond/3.5_x64/ispfpga.
+Package Status:                     Final          Version 1.47.
+Performance Hardware Data Status:   Final          Version 10.6.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   GSR                1/1           100% used
+   IOLOGIC            9/260           3% used
+   PIO (prelim)      48/238          20% used
+                     48/100          48% bonded
+   EBR                2/12           16% used
+   SLICE            831/4176         19% used
+
+
+
+chipcheck: INFO: Design contains pre-loadable EBR during configuration that has a requirement:Since the GSR is disabled for the EBR, make sure write enable and chip enable are inactive during wake-up, so that the pre-loaded initialization values will not be corrupted during wake-up state.
+Number of Signals: 2797
+Number of Connections: 6773
+
+Pin Constraint Summary:
+   48 out of 48 pins locked (100% locked).
+
+The following 5 signals are selected to use the primary clock routing resources:
+    digital_fm_radio.phase_accumulatorgen[31] (driver: digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0, clk load #: 19)
+    digital_fm_radio/U2/clk_50M (driver: digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0, clk load #: 2)
+    digital_fm_radio/sample_cntrgen[3] (driver: digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0, clk load #: 417)
+    digital_fm_radio/clk_10MHz (driver: digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0, clk load #: 21)
+    clk_25m_c (driver: clk_25m, clk load #: 29)
+
+No signal is selected as DCS clock.
+
+The following 3 signals are selected to use the secondary clock routing resources:
+    digital_fm_radio/PLL_RESET (driver: digital_fm_radio/SLICE_546, clk load #: 0, sr load #: 234, ce load #: 0)
+    digital_fm_radio/sample_cntr_RNIMNCE[3] (driver: digital_fm_radio/SLICE_716, clk load #: 0, sr load #: 0, ce load #: 145)
+    btn_up_c (driver: btn_up, clk load #: 8, sr load #: 0, ce load #: 0)
+
+Signal btn_center_c is selected as Global Set/Reset.
+Starting Placer Phase 0.
+...........
+Finished Placer Phase 0.  REAL time: 7 secs 
+
+Starting Placer Phase 1.
+...................
+Placer score = 612954.
+Finished Placer Phase 1.  REAL time: 22 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  601432
+Finished Placer Phase 2.  REAL time: 23 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 260 (0%)
+  PLL        : 2 out of 2 (100%)
+  CLKDIV     : 0 out of 2 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "digital_fm_radio.phase_accumulatorgen[31]" from CLKOP on comp "digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0" on PLL site "ULPLL", clk load = 19
+  PRIMARY "digital_fm_radio/U2/clk_50M" from CLKOP on comp "digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0" on PLL site "LRPLL", clk load = 2
+  PRIMARY "digital_fm_radio/sample_cntrgen[3]" from CLKOK on comp "digital_fm_radio/U2/pll_25M_50M_8M33/PLLInst_0" on PLL site "LRPLL", clk load = 417
+  PRIMARY "digital_fm_radio/clk_10MHz" from CLKOK on comp "digital_fm_radio/U2/pll_50M_360M_10M/PLLInst_0" on PLL site "ULPLL", clk load = 21
+  PRIMARY "clk_25m_c" from comp "clk_25m" on PIO site "30 (PL18B)", clk load = 29
+  SECONDARY "digital_fm_radio/PLL_RESET" from Q0 on comp "digital_fm_radio/SLICE_546" on site "R16C37B", clk load = 0, ce load = 0, sr load = 234
+  SECONDARY "digital_fm_radio/sample_cntr_RNIMNCE[3]" from F1 on comp "digital_fm_radio/SLICE_716" on site "R15C37C", clk load = 0, ce load = 145, sr load = 0
+  SECONDARY "btn_up_c" from comp "btn_up" on PIO site "11 (PL12A)", clk load = 8, ce load = 0, sr load = 0
+
+  PRIMARY  : 5 out of 8 (62%)
+     DCS   : 0 out of 2 (0%)
+  SECONDARY: 3 out of 4 (75%)
+
+Edge Clocks:
+  No edge clock selected
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   48 out of 238 (20.2%) PIO sites used.
+   48 out of 100 (48.0%) bonded PIO sites used.
+   Number of PIO comps: 48; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+----------------+------------+------------+------------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref1 | Bank Vref2 |
++----------+----------------+------------+------------+------------+
+| 0        | 8 / 20 ( 40%)  | 3.3V       | -          | -          |
+| 1        | 0 / 6 (  0%)   | -          | -          | -          |
+| 2        | 7 / 18 ( 38%)  | 3.3V       | -          | -          |
+| 3        | 4 / 4 (100%)   | 3.3V       | -          | -          |
+| 4        | 0 / 8 (  0%)   | -          | -          | -          |
+| 5        | 10 / 18 ( 55%) | 3.3V       | -          | -          |
+| 6        | 8 / 8 (100%)   | 3.3V       | -          | -          |
+| 7        | 11 / 18 ( 61%) | 3.3V       | -          | -          |
++----------+----------------+------------+------------+------------+
+
+
+DSP Utilization Summary:
+-------------------------------------
+DSP Block #:              1 2 3 4
+# of MULT36X36B                  
+# of MULT18X18B                  
+# of MULT18X18MACB               
+# of MULT18X18ADDSUBB            
+# of MULT18X18ADDSUBSUMB         
+# of MULT9X9B                    
+# of MULT9X9ADDSUBB              
+# of MULT9X9ADDSUBSUMB           
+
+Total placer CPU time: 22 secs 
+
+Dumping design to file project_project.dir/5_1.ncd.
+
+0 connections routed; 6773 unrouted.
+Starting router resource preassignment
+WARNING - par: The driver of primary clock net clk_25m_c is not placed on one of the PIO sites dedicated for primary clocks.  This primary clock will be routed to a H-spine through general routing resource and may suffer from excessive delay or skew.
+
+Completed router resource preassignment. Real time: 25 secs 
+
+Start NBR router at 00:15:56 01/22/16
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 00:15:56 01/22/16
+
+Start NBR section for initial routing at 00:15:56 01/22/16
+Level 1, iteration 1
+0(0.00%) conflict; 5072(74.89%) untouched conns; 410336 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.282ns/-410.337ns; real time: 27 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 5072(74.89%) untouched conns; 410336 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.282ns/-410.337ns; real time: 27 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 5072(74.89%) untouched conns; 410336 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.282ns/-410.337ns; real time: 27 secs 
+Level 4, iteration 1
+418(0.11%) conflicts; 0(0.00%) untouched conn; 455837 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-455.837ns; real time: 29 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 00:15:59 01/22/16
+Level 4, iteration 1
+228(0.06%) conflicts; 0(0.00%) untouched conn; 453462 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.462ns; real time: 29 secs 
+Level 4, iteration 2
+107(0.03%) conflicts; 0(0.00%) untouched conn; 453462 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.462ns; real time: 30 secs 
+Level 4, iteration 3
+42(0.01%) conflicts; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 30 secs 
+Level 4, iteration 4
+15(0.00%) conflicts; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 30 secs 
+Level 4, iteration 5
+7(0.00%) conflicts; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 31 secs 
+Level 4, iteration 6
+2(0.00%) conflicts; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 31 secs 
+Level 4, iteration 7
+0(0.00%) conflict; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 31 secs 
+
+Start NBR section for performance tuning (iteration 1) at 00:16:01 01/22/16
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 31 secs 
+
+Start NBR section for re-routing at 00:16:01 01/22/16
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 453684 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -131.941ns/-453.685ns; real time: 31 secs 
+
+Start NBR section for post-routing at 00:16:01 01/22/16
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 114 (1.68%)
+  Estimated worst slack<setup> : -131.941ns
+  Timing score<setup> : 503819
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+Total CPU time 33 secs 
+Total REAL time: 35 secs 
+Completely routed.
+End of route.  6773 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 503819 
+
+Dumping design to file project_project.dir/5_1.ncd.
+
+
+All signals are completely routed.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -131.941
+PAR_SUMMARY::Timing score<setup/<ns>> = 503.819
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.175
+PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 34 secs 
+Total REAL time to completion: 36 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2015 Lattice Semiconductor Corporation,  All rights reserved.

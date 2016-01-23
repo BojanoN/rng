@@ -1,0 +1,56 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Fri Jan 22 00:16:11 2016 *
+NOTE DESIGN NAME: ulx2s_fm_radio *
+NOTE DEVICE NAME: LFXP2-8E-6TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS rs232_tx : 137 : out *
+NOTE PINS clk_25m : 30 : in *
+NOTE PINS sram_ubl : 121 : out *
+NOTE PINS sram_lbl : 120 : out *
+NOTE PINS sram_wel : 93 : out *
+NOTE PINS sram_a[18] : 94 : out *
+NOTE PINS sram_a[17] : 78 : out *
+NOTE PINS sram_a[16] : 77 : out *
+NOTE PINS sram_a[15] : 74 : out *
+NOTE PINS sram_a[14] : 73 : out *
+NOTE PINS sram_a[13] : 57 : out *
+NOTE PINS sram_a[12] : 56 : out *
+NOTE PINS sram_a[11] : 55 : out *
+NOTE PINS sram_a[10] : 54 : out *
+NOTE PINS sram_a[9] : 53 : out *
+NOTE PINS sram_a[8] : 58 : out *
+NOTE PINS sram_a[7] : 122 : out *
+NOTE PINS sram_a[6] : 127 : out *
+NOTE PINS sram_a[5] : 125 : out *
+NOTE PINS sram_a[4] : 108 : out *
+NOTE PINS sram_a[3] : 107 : out *
+NOTE PINS sram_a[2] : 104 : out *
+NOTE PINS sram_a[1] : 103 : out *
+NOTE PINS sram_a[0] : 101 : out *
+NOTE PINS j2_16 : 31 : in *
+NOTE PINS btn_center : 22 : in *
+NOTE PINS btn_up : 11 : in *
+NOTE PINS btn_right : 38 : in *
+NOTE PINS btn_left : 2 : in *
+NOTE PINS led[7] : 138 : out *
+NOTE PINS led[6] : 6 : out *
+NOTE PINS led[5] : 5 : out *
+NOTE PINS led[4] : 144 : out *
+NOTE PINS led[3] : 35 : out *
+NOTE PINS led[2] : 36 : out *
+NOTE PINS led[1] : 37 : out *
+NOTE PINS led[0] : 29 : out *
+NOTE PINS p_tip[3] : 43 : out *
+NOTE PINS p_tip[2] : 28 : out *
+NOTE PINS p_tip[1] : 27 : out *
+NOTE PINS p_tip[0] : 32 : out *
+NOTE PINS p_ring : 44 : out *
+NOTE PINS sdcard_si : 17 : out *
+NOTE PINS sdcard_sck : 20 : out *
+NOTE PINS sdcard_cen : 15 : out *
+NOTE PINS flash_si : 19 : out *
+NOTE PINS flash_sck : 16 : out *
+NOTE PINS flash_cen : 13 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: off *

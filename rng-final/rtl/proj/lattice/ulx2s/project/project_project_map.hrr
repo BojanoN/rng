@@ -1,0 +1,142 @@
+---------------------------------------------------
+Report for cell ulx2s_fm_radio
+   Instance path: ulx2s_fm_radio
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     831.00        100.0
+                                 IOLGC	       9.00        100.0
+                                  LUT4	     823.00        100.0
+                                 IOREG	          9        100.0
+                                 IOBUF	         48        100.0
+                                PFUREG	        942        100.0
+                                RIPPLE	        414        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     FleaFPGA_FM_Radio	          1        100.0
+---------------------------------------------------
+Report for cell FleaFPGA_FM_Radio
+   Instance path: ulx2s_fm_radio/digital_fm_radio
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     830.75        100.0
+                                  LUT4	     821.00        99.8
+                                PFUREG	        942        100.0
+                                RIPPLE	        414        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               circuit	          1        42.5
+                                  FIR8	          1        11.6
+                                 FIR_1	          1        22.0
+                            FIR8_asinc	          1        11.7
+                            simple_PWM	          1         0.9
+                                rf_pll	          1         0.0
+---------------------------------------------------
+Report for cell simple_PWM
+   Instance path: ulx2s_fm_radio/digital_fm_radio/PWM0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       7.50         0.9
+                                  LUT4	       1.00         0.1
+                                PFUREG	         12         1.3
+                                RIPPLE	          7         1.7
+---------------------------------------------------
+Report for cell FIR_1
+   Instance path: ulx2s_fm_radio/digital_fm_radio/FIR2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     182.83        22.0
+                                  LUT4	     215.00        26.1
+                                PFUREG	        289        30.7
+                                RIPPLE	         75        18.1
+---------------------------------------------------
+Report for cell circuit
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     353.50        42.5
+                                  LUT4	     428.00        52.0
+                                PFUREG	        461        48.9
+                                RIPPLE	        131        31.6
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                 FIR_0	          1        21.7
+                                   nco	          1         4.0
+                            multiplier	          1        13.9
+                           loop_filter	          1         2.8
+---------------------------------------------------
+Report for cell nco
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U3/I2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      33.58         4.0
+                                  LUT4	      30.00         3.6
+                                PFUREG	         22         2.3
+                                RIPPLE	         18         4.3
+                                   EBR	          2        100.0
+---------------------------------------------------
+Report for cell loop_filter
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U3/I3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.67         2.8
+                                  LUT4	      28.00         3.4
+                                PFUREG	         20         2.1
+                                RIPPLE	          7         1.7
+---------------------------------------------------
+Report for cell FIR_0
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U3/I4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     180.33        21.7
+                                  LUT4	     215.00        26.1
+                                PFUREG	        289        30.7
+                                RIPPLE	         75        18.1
+---------------------------------------------------
+Report for cell multiplier
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U3/I1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     115.92        13.9
+                                  LUT4	     155.00        18.8
+                                PFUREG	        130        13.8
+                                RIPPLE	         31         7.5
+---------------------------------------------------
+Report for cell FIR8_asinc
+   Instance path: ulx2s_fm_radio/digital_fm_radio/FIR1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      97.00        11.7
+                                  LUT4	      80.00         9.7
+                                PFUREG	         42         4.5
+                                RIPPLE	         57        13.8
+---------------------------------------------------
+Report for cell FIR8
+   Instance path: ulx2s_fm_radio/digital_fm_radio/FIR0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      96.75        11.6
+                                  LUT4	      80.00         9.7
+                                PFUREG	         42         4.5
+                                RIPPLE	         57        13.8
+---------------------------------------------------
+Report for cell rf_pll
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                lfxp2_pll_50M_360M_10M	          1         0.0
+                lfxp2_pll_25M_50M_8M33	          1         0.0
+---------------------------------------------------
+Report for cell lfxp2_pll_50M_360M_10M
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U2/pll_50M_360M_10M
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell lfxp2_pll_25M_50M_8M33
+   Instance path: ulx2s_fm_radio/digital_fm_radio/U2/pll_25M_50M_8M33
+                     Cell usage:
+                                  cell	      count    Res Usage(%)

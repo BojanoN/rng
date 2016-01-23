@@ -1,0 +1,21 @@
+C:\lscc\diamond\3.6_x64\synpbase\bin64\c_vhdl.exe  -osyn  C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\synwork\project_project_hdl_.srs  -top  ulx2s_fm_radio  -prodtype  synplify_pro  -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.6_x64\cae_library\synthesis\vhdl\xp2.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\ulx2s_toplevel.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_rf_pll.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_pll_25M_50M_8M33.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_pll_50M_360M_10M.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\Simple_FIR_8bit.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\simple_PWM.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_Loop_filter.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_NCO.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_phase_detector.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_top.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\Simple_FIR.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\reg.vhd -lib work C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd  -log  C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\syntax.log  -fileorder  C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\syntmp\hdlorder.tcl 
+rc:0 success:1
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\synwork\project_project_hdl_.srs|o|0|0
+C:\lscc\diamond\3.6_x64\cae_library\synthesis\vhdl\xp2.vhd|i|1377025208|146261
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\ulx2s_toplevel.vhd|i|1453410381|3307
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_rf_pll.vhd|i|1453065962|816
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_pll_25M_50M_8M33.vhd|i|1453065960|4534
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\lattice\lfxp2_pll_50M_360M_10M.vhd|i|1453065960|4535
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FleaFPGA_FM_Radio.vhd|i|1453410553|7208
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\Simple_FIR_8bit.vhd|i|1453408545|1947
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\simple_PWM.vhd|i|1453065974|2464
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_Loop_filter.vhd|i|1453065966|1187
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_NCO.vhd|i|1453065968|6520
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_phase_detector.vhd|i|1453065970|3623
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\FMPLL_top.vhd|i|1453065970|1953
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\generic\Simple_FIR.vhd|i|1453065972|1548
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\reg.vhd|i|1453410655|669
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd|i|1453410627|1825
+C:\Users\Edgemaster\Desktop\rng\flearadio-master\rtl\proj\lattice\ulx2s\project\syntax.log|o|1453410660|948
+C:\lscc\diamond\3.6_x64\synpbase\bin\c_vhdl.exe|i|1439977578|2326016
+C:\lscc\diamond\3.6_x64\synpbase\bin64\c_vhdl.exe|i|1439977774|3183616

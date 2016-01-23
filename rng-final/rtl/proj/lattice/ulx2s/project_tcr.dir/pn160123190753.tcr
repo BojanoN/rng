@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/23/2016 19:06:32
+#Project Location: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s; Project name: project
+prj_project open "C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s/project.ldf"
+prj_project close
+#Stop recording: 1/23/2016 19:07:53

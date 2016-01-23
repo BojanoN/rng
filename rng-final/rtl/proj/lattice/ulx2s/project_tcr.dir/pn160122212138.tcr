@@ -1,0 +1,5 @@
+#Start recording tcl command: 1/22/2016 00:01:15
+#Project Location: C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s; Project name: project
+prj_project open "C:/Users/Bojan/Documents/rngfinal/flearadio-master-final/rtl/proj/lattice/ulx2s/project.ldf"
+prj_run Export -impl project -task Bitgen
+#Stop recording: 1/22/2016 21:21:38

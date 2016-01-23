@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.5_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  ulx2s_fm_radio  -multisrs  C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synwork\project_project_comp.srs  -osyn  C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synwork\project_project_mult.srs  -log  C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synlog\project_project_multi_srs_gen.srr 
+rc:0 success:1
+C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synwork\project_project_comp.srs|i|1453418115|28420
+C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synwork\project_project_mult.srs|o|1453418117|5302
+C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\project\synlog\project_project_multi_srs_gen.srr|o|1453418117|523
+C:\lscc\diamond\3.5_x64\synpbase\bin\syn_nfilter.exe|i|1429540166|3000832
+C:\lscc\diamond\3.5_x64\synpbase\bin64\syn_nfilter.exe|i|1429540358|3967488

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FleaRadio" device="LFXP2-8E-6TN144C" default_implementation="FleaRadio">
+    <Options>
+        <Option name="HDL type" value="Verilog"/>
+    </Options>
+    <Implementation title="FleaRadio" dir="FleaRadio" description="FleaRadio" synthesis="synplify" default_strategy="Area">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="def_top" value="reg_file"/>
+            <Option name="lib" value="work"/>
+        </Options>
+        <Source name="../../../lattice/ulx2s_toplevel.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../lattice/lfxp2_rf_pll.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work" top_module="rf_pll"/>
+        </Source>
+        <Source name="../../../lattice/lfxp2_pll_25M_50M_8M33.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../lattice/lfxp2_pll_50M_360M_10M.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../generic/FleaFPGA_FM_Radio.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../generic/Simple_FIR_8bit.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work" top_module="FIR8"/>
+        </Source>
+        <Source name="../../../generic/simple_PWM.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work" top_module="simple_PWM"/>
+        </Source>
+        <Source name="../../../generic/FMPLL_Loop_filter.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../generic/FMPLL_NCO.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../generic/FMPLL_phase_detector.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="../../../generic/FMPLL_top.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work" top_module="circuit"/>
+        </Source>
+        <Source name="../../../generic/Simple_FIR.vhd" type="VHDL" type_short="VHDL">
+            <Options lib="work"/>
+        </Source>
+        <Source name="FleaRadio/source/reg.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="reg_file"/>
+        </Source>
+        <Source name="ulx2s.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FleaRadio1.sty"/>
+</BaliProject>

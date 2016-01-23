@@ -1,0 +1,160 @@
+@W: CG296 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":167:0:167:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":169:7:169:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":195:0:195:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":197:7:197:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":208:0:208:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":210:7:210:9|Referenced variable rst is not in sensitivity list
+@W: CG296 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":228:0:228:6|Incomplete sensitivity list - assuming completeness
+@W: CG290 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":230:7:230:9|Referenced variable rst is not in sensitivity list
+@W: CD638 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":68:9:68:19|Signal lpf_output2 is undriven 
+@W: CD638 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":70:9:70:20|Signal input_sample is undriven 
+@W: CD638 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":76:9:76:17|Signal led_blink is undriven 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning bits 15 to 12 of sum_2(15 downto 0) -- not in use ... 
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(10) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(11) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(12) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(13) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(14) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(15) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(16) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(17) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(18) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(19) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(20) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(21) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(22) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(23) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(24) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(25) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(26) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(27) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(28) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(29) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(30) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|All reachable assignments to dtemp1(31) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|All reachable assignments to D2(0) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|All reachable assignments to D2(1) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|All reachable assignments to D2(2) assign '0'; register removed by optimization
+@W: CL111 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|All reachable assignments to D2(3) assign '0'; register removed by optimization
+@W: CL169 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|Pruning register E(11 downto 0)  
+@W: CL169 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_Loop_filter.vhd":29:2:29:3|Pruning register D2(11 downto 4)  
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 9 of part7_4(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 10 of part6_4(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 11 of part5_4(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 12 of part4_4(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 13 of part3_4(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 15 to 14 of part2_4(15 downto 0) -- not in use ... 
+@W: CL265 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bit 15 of part1_6(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning bits 7 to 0 of out_temp_3(15 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning bits 11 to 8 of sum_2(11 downto 0) -- not in use ... 
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning bits 11 to 8 of sum_2(11 downto 0) -- not in use ... 
+@W: CD326 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_rf_pll.vhd":20:27:20:53|Port lock of entity work.lfxp2_pll_25m_50m_8m33 is unconnected
+@W: CD326 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\lfxp2_rf_pll.vhd":26:27:26:53|Port lock of entity work.lfxp2_pll_50m_360m_10m is unconnected
+@W: CL169 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":188:8:188:9|Pruning register rnd_1(7 downto 0)  
+@W: CL271 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":230:4:230:5|Pruning bits 11 to 4 of sample_cntr(11 downto 0) -- not in use ... 
+@W: CL208 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":246:18:246:18|All reachable assignments to bit 8 of n(31 downto 23) assign 0, register removed by optimization.
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":60:21:60:28|sram_ubl is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":60:11:60:18|sram_lbl is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":60:1:60:8|sram_wel is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":58:1:58:6|sram_a is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":48:25:48:33|sdcard_si is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":48:13:48:22|sdcard_sck is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":48:1:48:10|sdcard_cen is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":46:23:46:30|flash_si is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":46:12:46:20|flash_sck is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":46:1:46:9|flash_cen is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":43:1:43:8|rs232_tx is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d0(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d1(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d2(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d3(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d4(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d5(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d6(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d7(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d8(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d9(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d10(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d11(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d12(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d13(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d14(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR_8bit.vhd":32:1:32:2|Pruning register bits 11 to 8 of d15(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d0(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d1(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d2(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d3(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d4(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d5(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d6(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d7(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d8(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d9(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d10(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d11(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d12(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d13(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d14(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\proj\lattice\ulx2s\FIR8_asinc.vhd":32:1:32:2|Pruning register bits 11 to 8 of d15(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 15 to 8 of input1_buf(15 downto 0)  
+@W: CL260 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bit 9 of part6(9 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 10 to 9 of part5(10 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 11 to 9 of part4(11 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 12 to 9 of part3(12 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 13 to 9 of part2(13 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 14 to 9 of part1(14 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_phase_detector.vhd":35:2:35:3|Pruning register bits 15 to 9 of part0(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FMPLL_NCO.vhd":289:0:289:1|Pruning register bits 17 to 12 of din_buf(17 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d0(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d1(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d2(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d3(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d4(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d5(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d6(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d7(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d8(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d9(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d10(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d11(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d12(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d13(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d14(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\Simple_FIR.vhd":24:1:24:2|Pruning register bits 15 to 12 of d15(15 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":169:4:169:5|Pruning register bits 7 to 5 of input_sample3(7 downto 0)  
+@W: CL279 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\generic\FleaFPGA_FM_Radio.vhd":169:4:169:5|Pruning register bits 3 to 1 of input_sample3(7 downto 0)  
+@W: CL159 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":44:1:44:8|Input rs232_rx is unused
+@W: CL159 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":45:1:45:8|Input flash_so is unused
+@W: CL159 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":47:1:47:9|Input sdcard_so is unused
+@W: CL159 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":52:30:52:37|Input btn_down is unused
+@W: CL159 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":53:1:53:2|Input sw is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:1:54:4|Inout j1_2 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:7:54:10|Inout j1_3 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:13:54:16|Inout j1_4 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:19:54:22|Inout j1_8 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:25:54:28|Inout j1_9 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:31:54:35|Inout j1_13 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:38:54:42|Inout j1_14 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":54:45:54:49|Inout j1_15 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:1:55:5|Inout j1_16 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:8:55:12|Inout j1_17 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:15:55:19|Inout j1_18 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:22:55:26|Inout j1_19 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:29:55:33|Inout j1_20 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:36:55:40|Inout j1_21 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:43:55:47|Inout j1_22 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":55:50:55:54|Inout j1_23 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:1:56:4|Inout j2_2 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:7:56:10|Inout j2_3 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:13:56:16|Inout j2_4 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:19:56:22|Inout j2_5 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:25:56:28|Inout j2_6 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:31:56:34|Inout j2_7 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:37:56:40|Inout j2_8 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":56:43:56:46|Inout j2_9 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":57:1:57:5|Inout j2_10 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":57:8:57:12|Inout j2_11 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":57:15:57:19|Inout j2_12 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":57:22:57:26|Inout j2_13 is unused
+@W: CL158 :"C:\Users\Bojan\Documents\rngfinal\flearadio-master-final\rtl\lattice\ulx2s_toplevel.vhd":59:1:59:6|Inout sram_d is unused
+

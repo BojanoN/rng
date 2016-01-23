@@ -1,0 +1,107 @@
+@P:  Worst Slack : 989.217
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Estimated Frequency : NA
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Requested Frequency : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Estimated Period : NA
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Requested Period : 1000.000
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Slack : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Estimated Frequency : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Requested Frequency : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Estimated Period : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Requested Period : 1000.000
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Slack : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Estimated Frequency : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Requested Frequency : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Estimated Period : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Requested Period : 1000.000
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Slack : NA
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Estimated Frequency : 131.8 MHz
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Requested Frequency : 1.0 MHz
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Estimated Period : 7.589
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Requested Period : 1000.000
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Slack : 992.411
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Estimated Frequency : 92.7 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Requested Frequency : 1.0 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Estimated Period : 10.783
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Requested Period : 1000.000
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Slack : 989.217
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Estimated Frequency : 183.8 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Requested Frequency : 1.0 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Estimated Period : 5.440
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Requested Period : 1000.000
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Slack : 994.560
+@P:  ulx2s_fm_radio|btn_up - Estimated Frequency : NA
+@P:  ulx2s_fm_radio|btn_up - Requested Frequency : 1.0 MHz
+@P:  ulx2s_fm_radio|btn_up - Estimated Period : NA
+@P:  ulx2s_fm_radio|btn_up - Requested Period : 1000.000
+@P:  ulx2s_fm_radio|btn_up - Slack : NA
+@P:  ulx2s_fm_radio|clk_25m - Estimated Frequency : 92.7 MHz
+@P:  ulx2s_fm_radio|clk_25m - Requested Frequency : 1.0 MHz
+@P:  ulx2s_fm_radio|clk_25m - Estimated Period : 10.783
+@P:  ulx2s_fm_radio|clk_25m - Requested Period : 1000.000
+@P:  ulx2s_fm_radio|clk_25m - Slack : 989.217
+@P:  System - Estimated Frequency : 216.8 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 4.614
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 995.386
+@P:  Worst Slack(min analysis) : 0.000
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Estimated Frequency(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Requested Frequency(min analysis) : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Estimated Period(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Requested Period(min analysis) : 1000.000
+@P:  FleaFPGA_FM_Radio|long_timer_derived_clock[19] - Slack(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Estimated Frequency(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Requested Frequency(min analysis) : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Estimated Period(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Requested Period(min analysis) : 1000.000
+@P:  FleaFPGA_FM_Radio|phase_accumulator_derived_clock[31] - Slack(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Estimated Frequency(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Requested Frequency(min analysis) : 1.0 MHz
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Estimated Period(min analysis) : NA
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Requested Period(min analysis) : 1000.000
+@P:  FleaFPGA_FM_Radio|sample_cntr_derived_clock[3] - Slack(min analysis) : NA
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Estimated Frequency(min analysis) : 131.8 MHz
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Estimated Period(min analysis) : 7.589
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Requested Period(min analysis) : 1000.000
+@P:  lfxp2_pll_25M_50M_8M33|CLKOK_inferred_clock - Slack(min analysis) : 992.411
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Estimated Frequency(min analysis) : 92.7 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Estimated Period(min analysis) : 10.783
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Requested Period(min analysis) : 1000.000
+@P:  lfxp2_pll_50M_360M_10M|CLKOK_inferred_clock - Slack(min analysis) : 989.217
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Estimated Frequency(min analysis) : 183.8 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Requested Frequency(min analysis) : 1.0 MHz
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Estimated Period(min analysis) : 5.440
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Requested Period(min analysis) : 1000.000
+@P:  lfxp2_pll_50M_360M_10M|CLKOP_inferred_clock - Slack(min analysis) : 994.560
+@P:  ulx2s_fm_radio|btn_up - Estimated Frequency(min analysis) : NA
+@P:  ulx2s_fm_radio|btn_up - Requested Frequency(min analysis) : 1.0 MHz
+@P:  ulx2s_fm_radio|btn_up - Estimated Period(min analysis) : NA
+@P:  ulx2s_fm_radio|btn_up - Requested Period(min analysis) : 1000.000
+@P:  ulx2s_fm_radio|btn_up - Slack(min analysis) : NA
+@P:  ulx2s_fm_radio|clk_25m - Estimated Frequency(min analysis) : 92.7 MHz
+@P:  ulx2s_fm_radio|clk_25m - Requested Frequency(min analysis) : 1.0 MHz
+@P:  ulx2s_fm_radio|clk_25m - Estimated Period(min analysis) : 10.783
+@P:  ulx2s_fm_radio|clk_25m - Requested Period(min analysis) : 1000.000
+@P:  ulx2s_fm_radio|clk_25m - Slack(min analysis) : 989.217
+@P:  System - Estimated Frequency(min analysis) : 1.0 MHz
+@P:  System - Requested Frequency(min analysis) : 1.0 MHz
+@P:  System - Estimated Period(min analysis) : 1000.000
+@P:  System - Requested Period(min analysis) : 1000.000
+@P:  System - Slack(min analysis) : 0.000
+@P:  Total Area : 812.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:07s
